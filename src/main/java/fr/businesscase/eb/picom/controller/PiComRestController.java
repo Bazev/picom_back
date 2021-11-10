@@ -74,14 +74,14 @@ public class PiComRestController {
                                   @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd, @PathVariable long customerId, @PathVariable long areaId,
                                   @PathVariable long houresId) {
         AdvertImage annonceImage = new AdvertImage();
-        annonceImage.setDateCreation(dateCreate);
-        annonceImage.setDateDebut(dateStart);
-        annonceImage.setDateFin(dateEnd);
+        annonceImage.setDateCreate(dateCreate);
+        annonceImage.setDateStart(dateStart);
+        annonceImage.setDateEnd(dateEnd);
         Customer customer = customerService.getCustomer(customerId);
         annonceImage.setCustomer(customer);
         List<Area> areasAnnonceHtml = new ArrayList<>();
         areasAnnonceHtml.add(areaService.getArea(areaId));
-        annonceImage.setZones(areasAnnonceHtml);
+        annonceImage.setAreas(areasAnnonceHtml);
         List<SlotTime> houresAnnonceHtml = new ArrayList<>();
         houresAnnonceHtml.add(slotTimeService.getHoure(houresId));
         annonceImage.setSlotTimes(houresAnnonceHtml);
@@ -94,14 +94,14 @@ public class PiComRestController {
                                    @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd, @PathVariable long customerId, @PathVariable long areaId,
                                    @PathVariable long houresId, @PathVariable String content) {
         AdvertHtml annonceHtml = new AdvertHtml();
-        annonceHtml.setDateCreation(dateCreate);
-        annonceHtml.setDateDebut(dateStart);
-        annonceHtml.setDateFin(dateEnd);
+        annonceHtml.setDateCreate(dateCreate);
+        annonceHtml.setDateStart(dateStart);
+        annonceHtml.setDateEnd(dateEnd);
         Customer customer = customerService.getCustomer(customerId);
         annonceHtml.setCustomer(customer);
         List<Area> areasAnnonceHtml = new ArrayList<>();
         areasAnnonceHtml.add(areaService.getArea(areaId));
-        annonceHtml.setZones(areasAnnonceHtml);
+        annonceHtml.setAreas(areasAnnonceHtml);
         List<SlotTime> houresAnnoncePicture = new ArrayList<>();
         houresAnnoncePicture.add(slotTimeService.getHoure(houresId));
         annonceHtml.setSlotTimes(houresAnnoncePicture);

@@ -17,18 +17,18 @@ public abstract class Advert {
     @Temporal(TemporalType.DATE)
     @Column(name = "date_creation")
     @DateTimeFormat(pattern = "yyyy-mm-jj")
-    private Date dateCreation;
+    private Date dateCreate;
 
     @NotNull(message = "Merci de préciser la date de début où l'annonce doit être diffusé")
     @Temporal(TemporalType.DATE)
     @Column(name = "date_debut")
     @DateTimeFormat(pattern = "yyyy-mm-jj")
-    private Date dateDebut;
+    private Date dateStart;
 
     @NotNull(message = "Merci de préciser la de fin où l'annonce doit se terminer")
     @Temporal(TemporalType.DATE)
     @Column(name = "date_fin")
-    private Date dateFin;
+    private Date dateEnd;
 
     @NotNull(message = "Merci de préciser le client")
     @ManyToOne
@@ -48,28 +48,28 @@ public abstract class Advert {
     private List<SlotTime> slotTimes;
 
     @Column(name = "intitule")
-    private String intitule;
+    private String content;
 
     public Advert() {
-        dateCreation = new Date();
+        dateCreate = new Date();
     }
 
-    public Advert(Date dateCreation, Date dateDebut, Date dateFin, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String intitule) {
-        this.dateCreation = dateCreation;
-        this.dateDebut = dateDebut;
-        this.dateFin = dateFin;
+    public Advert(Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String content) {
+        this.dateCreate = dateCreate;
+        this.dateStart = dateStart;
+        this.dateEnd = dateEnd;
         this.customer = customer;
         this.areas = areas;
         this.slotTimes = slotTimes;
-        this.intitule = intitule;
+        this.content = content;
     }
 
-    public String getIntitule() {
-        return intitule;
+    public String getContent() {
+        return content;
     }
 
-    public void setIntitule(String intitule) {
-        this.intitule = intitule;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public List<SlotTime> getSlotTimes() {
@@ -80,11 +80,11 @@ public abstract class Advert {
         this.slotTimes = slotTimes;
     }
 
-    public List<Area> getZones() {
+    public List<Area> getAreas() {
         return areas;
     }
 
-    public void setZones(List<Area> areas) {
+    public void setAreas(List<Area> areas) {
         this.areas = areas;
     }
 
@@ -104,38 +104,38 @@ public abstract class Advert {
         this.customer = customer;
     }
 
-    public Date getDateFin() {
-        return dateFin;
+    public Date getDateEnd() {
+        return dateEnd;
     }
 
-    public void setDateFin(Date dateFin) {
-        this.dateFin = dateFin;
+    public void setDateEnd(Date dateEnd) {
+        this.dateEnd = dateEnd;
     }
 
-    public Date getDateDebut() {
-        return dateDebut;
+    public Date getDateStart() {
+        return dateStart;
     }
 
-    public void setDateDebut(Date dateDebut) {
-        this.dateDebut = dateDebut;
+    public void setDateStart(Date dateStart) {
+        this.dateStart = dateStart;
     }
 
-    public Date getDateCreation() {
-        return dateCreation;
+    public Date getDateCreate() {
+        return dateCreate;
     }
 
-    public void setDateCreation(Date dateCreation) {
-        this.dateCreation = dateCreation;
+    public void setDateCreate(Date dateCreate) {
+        this.dateCreate = dateCreate;
     }
 
     @Override
     public String toString() {
         return getClass().getSimpleName() + "(" +
                 "id = " + id + ", " +
-                "dateCreation = " + dateCreation + ", " +
-                "dateDebut = " + dateDebut + ", " +
-                "dateFin = " + dateFin + ", " +
+                "dateCreate = " + dateCreate + ", " +
+                "dateStart = " + dateStart + ", " +
+                "dateEnd = " + dateEnd + ", " +
                 "customer = " + customer + ", " +
-                "intitule = " + intitule + ")";
+                "content = " + content + ")";
     }
 }

@@ -86,12 +86,12 @@ public class InitController {
                     try {
                         Date dateDebut = format.parse("2021-10-01");
                         Date dateFin = format.parse("2021-11-21");
-                        annonceImage.setDateDebut(dateDebut);
-                        annonceImage.setDateFin(dateFin);
+                        annonceImage.setDateStart(dateDebut);
+                        annonceImage.setDateEnd(dateFin);
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                    annonceImage.setIntitule("Intitule"+j);
+                    annonceImage.setContent("Intitule"+j);
                     List<SlotTime> slotTimeList = slotTimeService.getSlotTimes();
                     slotTimeList.add(slotTimeService.getSlotTime(10));
                     slotTimeList.add(slotTimeService.getSlotTime(11));
@@ -101,7 +101,7 @@ public class InitController {
                     areaList.add(areaService.getArea("zone4"));
                     areaList.add(areaService.getArea("zone7"));
                     annonceImage.setSlotTimes(slotTimeList);
-                    annonceImage.setZones(areaList);
+                    annonceImage.setAreas(areaList);
                     advertService.recordAdvertPicture(annonceImage);
                 }
             }

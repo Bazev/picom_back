@@ -11,9 +11,9 @@ import java.util.List;
 
 public interface AdvertRepository extends JpaRepository<Advert, Long> {
 
-    Page<Advert> findByIntituleContaining(String filtre, Pageable pageable);
+    Page<Advert> findByContentContaining(String filtre, Pageable pageable);
 
-    Page<Advert> findByIntituleContainingAndIdNot(User userEnSession, String filtre, Pageable pageable);
+    Page<Advert> findByContentContainingAndIdNot(User userEnSession, String filtre, Pageable pageable);
 
     Page<Advert> findByCustomer(Pageable pageable, Customer customer);
 
