@@ -48,28 +48,28 @@ public abstract class Advert {
     private List<SlotTime> slotTimes;
 
     @Column(name = "intitule")
-    private String content;
+    private String title;
 
     public Advert() {
         dateCreate = new Date();
     }
 
-    public Advert(Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String content) {
+    public Advert(Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title) {
         this.dateCreate = dateCreate;
         this.dateStart = dateStart;
         this.dateEnd = dateEnd;
         this.customer = customer;
         this.areas = areas;
         this.slotTimes = slotTimes;
-        this.content = content;
+        this.title = title;
     }
 
-    public String getContent() {
-        return content;
+    public String getTitle() {
+        return title;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public List<SlotTime> getSlotTimes() {
@@ -136,6 +136,6 @@ public abstract class Advert {
                 "dateStart = " + dateStart + ", " +
                 "dateEnd = " + dateEnd + ", " +
                 "customer = " + customer + ", " +
-                "content = " + content + ")";
+                "title = " + title + ")";
     }
 }

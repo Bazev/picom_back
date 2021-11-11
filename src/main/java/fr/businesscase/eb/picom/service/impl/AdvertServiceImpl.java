@@ -40,12 +40,12 @@ public class AdvertServiceImpl implements AdvertService {
 
     @Override
     public Page<Advert> getAdverts(String filtre, Pageable pageable) {
-        return advertRepository.findByContentContaining(filtre, pageable);
+        return advertRepository.findByTitleContaining(filtre, pageable);
     }
 
     @Override
     public Page<Advert> getAdverts(User userEnSession, String filtre, Pageable pageable) {
-        return advertRepository.findByContentContainingAndIdNot(userEnSession, filtre, pageable);
+        return advertRepository.findByTitleContainingAndIdNot(userEnSession, filtre, pageable);
     }
 
     @Override

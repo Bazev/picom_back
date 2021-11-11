@@ -27,7 +27,7 @@ public class AreaServiceImpl implements AreaService {
 
     @Override
     public Area getArea(String nom) {
-        return zoneRepository.findByNom(nom);
+        return zoneRepository.findByName(nom);
     }
 
     @Override

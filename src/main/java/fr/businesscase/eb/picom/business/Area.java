@@ -12,7 +12,7 @@ public class Area {
     private Long id;
 
     @Column(name = "nom")
-    private String nom;
+    private String name;
 
     @OneToMany(mappedBy = "area", fetch = FetchType.EAGER)
     private List<Arret> arrets;
@@ -23,8 +23,8 @@ public class Area {
     public Area() {
     }
 
-    public Area(String nom) {
-        this.nom = nom;
+    public Area(String name) {
+        this.name = name;
     }
 
     public List<Advert> getAdverts() {
@@ -43,12 +43,12 @@ public class Area {
         this.arrets = arrets;
     }
 
-    public String getNom() {
-        return nom;
+    public String getName() {
+        return name;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Long getId() {
@@ -63,6 +63,6 @@ public class Area {
     public String toString() {
         return getClass().getSimpleName() + "(" +
                 "id = " + id + ", " +
-                "nom = " + nom + ")";
+                "name = " + name + ")";
     }
 }

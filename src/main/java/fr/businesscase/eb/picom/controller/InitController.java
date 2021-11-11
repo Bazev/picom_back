@@ -40,7 +40,7 @@ public class InitController {
         if (areaService.getAreas().isEmpty()) {
             for (int i = 1; i <= 20; i++) {
                 Area area = new Area();
-                area.setNom("Zone" + i);
+                area.setName("Zone" + i);
                 areaService.recordArea(area);
                 for(int j = 1; j <=10; j++) {
                     arretService.ajouterArret("Arret"+j, area.getId());
@@ -91,7 +91,7 @@ public class InitController {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                    annonceImage.setContent("Intitule"+j);
+                    annonceImage.setTitle("Intitule"+j);
                     List<SlotTime> slotTimeList = slotTimeService.getSlotTimes();
                     slotTimeList.add(slotTimeService.getSlotTime(10));
                     slotTimeList.add(slotTimeService.getSlotTime(11));

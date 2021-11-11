@@ -18,4 +18,8 @@ public interface UsersService {
 
     User getUser(Long id);
 
+    String getPasswordByEmail(String email);
+
+    boolean checkEmailAndPassword(String email, String password);
+
 }

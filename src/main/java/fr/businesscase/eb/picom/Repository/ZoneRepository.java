@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ZoneRepository extends JpaRepository<Area, Long> {
 
-    Area findByNom(String nom);
+    Area findByName(String nom);
 }

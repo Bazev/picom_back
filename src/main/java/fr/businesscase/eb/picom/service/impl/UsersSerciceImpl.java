@@ -44,5 +44,16 @@ public class UsersSerciceImpl implements UsersService {
         return usersRepository.findById(id).orElse(null);
     }
 
+    @Override
+    public String getPasswordByEmail(String email) {
+        return usersRepository.findPasswordByEmail(email);
+    }
+
+    @Override
+    public boolean checkEmailAndPassword(String email, String password) {
+        String passwordBase = usersRepository.findPasswordByEmail(email);
+        return passwordBase.equals(password);
+    }
+
 
 }
