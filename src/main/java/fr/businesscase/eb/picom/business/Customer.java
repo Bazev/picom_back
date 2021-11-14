@@ -1,5 +1,6 @@
 package fr.businesscase.eb.picom.business;
 
+import net.minidev.json.annotate.JsonIgnore;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Column;
@@ -14,9 +15,11 @@ public class Customer extends User {
     @Column(name = "numero_tel", unique = true)
     private String numeroTel;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "customer")
     private List<Advert> adverts;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "customer")
     private List<CarteBancaire> carteBancaires;
 

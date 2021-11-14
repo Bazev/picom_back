@@ -1,5 +1,6 @@
 package fr.businesscase.eb.picom.business;
 
+import net.minidev.json.annotate.JsonIgnore;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -9,45 +10,50 @@ import java.util.List;
 
 @Entity
 public abstract class Advert {
+
+    @JsonIgnore
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "date_creation")
+    @Column(name = "date_create")
     @DateTimeFormat(pattern = "yyyy-mm-jj")
     private Date dateCreate;
 
     @NotNull(message = "Merci de préciser la date de début où l'annonce doit être diffusé")
     @Temporal(TemporalType.DATE)
-    @Column(name = "date_debut")
+    @Column(name = "date_start")
     @DateTimeFormat(pattern = "yyyy-mm-jj")
     private Date dateStart;
 
     @NotNull(message = "Merci de préciser la de fin où l'annonce doit se terminer")
     @Temporal(TemporalType.DATE)
-    @Column(name = "date_fin")
+    @Column(name = "date_end")
     private Date dateEnd;
 
+    @JsonIgnore
     @NotNull(message = "Merci de préciser le client")
     @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
+    @JsonIgnore
     @ManyToMany
     @JoinTable(name = "advert_zones",
             joinColumns = @JoinColumn(name = "advert_id"),
             inverseJoinColumns = @JoinColumn(name = "zones_id"))
     private List<Area> areas;
 
+    @JsonIgnore
     @ManyToMany
     @JoinTable(name = "advert_slot_time",
             joinColumns = @JoinColumn(name = "advert_id"),
             inverseJoinColumns = @JoinColumn(name = "slot_times_id"))
     private List<SlotTime> slotTimes;
 
-    @Column(name = "intitule")
+    @Column(name = "title")
     private String title;
 
     public Advert() {

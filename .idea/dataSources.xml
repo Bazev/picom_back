@@ -8,7 +8,7 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/picom</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="picom@localhost [2]" uuid="f5d844fa-e716-47e2-a3c6-9b86f121ede8">
+    <data-source source="LOCAL" name="picomMysQl@localhost [2]" uuid="f5d844fa-e716-47e2-a3c6-9b86f121ede8">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
