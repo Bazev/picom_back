@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.businesscase.eb.picom.PicomApplicationTests" time="6.053" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.businesscase.eb.picom.PicomApplicationTests" time="7.187" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/bazev/IdeaProjects/picom_back/picom/target/test-classes:/home/bazev/IdeaProjects/picom_back/picom/target/classes:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.5.5/spring-boot-starter-data-jpa-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.5.5/spring-boot-starter-aop-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/spring-aop/5.3.10/spring-aop-5.3.10.jar:/home/bazev/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.5.5/spring-boot-starter-jdbc-2.5.5.jar:/home/bazev/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/home/bazev/.m2/repository/org/springframework/spring-jdbc/5.3.10/spring-jdbc-5.3.10.jar:/home/bazev/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/home/bazev/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/bazev/.m2/repository/org/hibernate/hibernate-core/5.4.32.Final/hibernate-core-5.4.32.Final.jar:/home/bazev/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/bazev/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/bazev/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/home/bazev/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/bazev/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/bazev/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/bazev/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/bazev/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/bazev/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar:/home/bazev/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar:/home/bazev/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/home/bazev/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/bazev/.m2/repository/org/springframework/data/spring-data-jpa/2.5.5/spring-data-jpa-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/data/spring-data-commons/2.5.5/spring-data-commons-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/spring-orm/5.3.10/spring-orm-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-context/5.3.10/spring-context-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-tx/5.3.10/spring-tx-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-beans/5.3.10/spring-beans-5.3.10.jar:/home/bazev/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/home/bazev/.m2/repository/org/springframework/spring-aspects/5.3.10/spring-aspects-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/2.5.5/spring-boot-starter-data-rest-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.5.5/spring-data-rest-webmvc-3.5.5.jar:/home/bazev/.m2/repository/org/springframework/data/spring-data-rest-core/3.5.5/spring-data-rest-core-3.5.5.jar:/home/bazev/.m2/repository/org/springframework/hateoas/spring-hateoas/1.3.4/spring-hateoas-1.3.4.jar:/home/bazev/.m2/repository/org/springframework/plugin/spring-plugin-core/2.0.0.RELEASE/spring-plugin-core-2.0.0.RELEASE.jar:/home/bazev/.m2/repository/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.5.5/spring-boot-starter-thymeleaf-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.5/spring-boot-starter-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.5.5/spring-boot-starter-logging-2.5.5.jar:/home/bazev/.m2/repository/ch/qos/logback/logback-classic/1.2.6/logback-classic-1.2.6.jar:/home/bazev/.m2/repository/ch/qos/logback/logback-core/1.2.6/logback-core-1.2.6.jar:/home/bazev/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.14.1/log4j-to-slf4j-2.14.1.jar:/home/bazev/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/bazev/.m2/repository/org/slf4j/jul-to-slf4j/1.7.32/jul-to-slf4j-1.7.32.jar:/home/bazev/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/bazev/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/home/bazev/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.12.RELEASE/thymeleaf-spring5-3.0.12.RELEASE.jar:/home/bazev/.m2/repository/org/thymeleaf/thymeleaf/3.0.12.RELEASE/thymeleaf-3.0.12.RELEASE.jar:/home/bazev/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/bazev/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/bazev/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.5.5/spring-boot-starter-validation-2.5.5.jar:/home/bazev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.53/tomcat-embed-el-9.0.53.jar:/home/bazev/.m2/repository/org/hibernate/validator/hibernate-validator/6.2.0.Final/hibernate-validator-6.2.0.Final.jar:/home/bazev/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.5.5/spring-boot-starter-web-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.5.5/spring-boot-starter-json-2.5.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.5/jackson-datatype-jdk8-2.12.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.5/jackson-datatype-jsr310-2.12.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.12.5/jackson-module-parameter-names-2.12.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.5.5/spring-boot-starter-tomcat-2.5.5.jar:/home/bazev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.53/tomcat-embed-core-9.0.53.jar:/home/bazev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.53/tomcat-embed-websocket-9.0.53.jar:/home/bazev/.m2/repository/org/springframework/spring-web/5.3.10/spring-web-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-webmvc/5.3.10/spring-webmvc-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-expression/5.3.10/spring-expression-5.3.10.jar:/home/bazev/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/bazev/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/home/bazev/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-devtools/2.5.5/spring-boot-devtools-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot/2.5.5/spring-boot-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.5.5/spring-boot-autoconfigure-2.5.5.jar:/home/bazev/.m2/repository/mysql/mysql-connector-java/8.0.26/mysql-connector-java-8.0.26.jar:/home/bazev/.m2/repository/org/postgresql/postgresql/42.2.23/postgresql-42.2.23.jar:/home/bazev/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.5.5/spring-boot-starter-test-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-test/2.5.5/spring-boot-test-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.5.5/spring-boot-test-autoconfigure-2.5.5.jar:/home/bazev/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/home/bazev/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/bazev/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/bazev/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/bazev/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/bazev/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/bazev/.m2/repository/org/assertj/assertj-core/3.19.0/assertj-core-3.19.0.jar:/home/bazev/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/bazev/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/home/bazev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/bazev/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/bazev/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/bazev/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/bazev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/home/bazev/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/bazev/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/bazev/.m2/repository/org/mockito/mockito-core/3.9.0/mockito-core-3.9.0.jar:/home/bazev/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.22/byte-buddy-agent-1.10.22.jar:/home/bazev/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/bazev/.m2/repository/org/mockito/mockito-junit-jupiter/3.9.0/mockito-junit-jupiter-3.9.0.jar:/home/bazev/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/home/bazev/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/bazev/.m2/repository/org/springframework/spring-core/5.3.10/spring-core-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-jcl/5.3.10/spring-jcl-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-test/5.3.10/spring-test-5.3.10.jar:/home/bazev/.m2/repository/org/xmlunit/xmlunit-core/2.8.2/xmlunit-core-2.8.2.jar:/home/bazev/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:"/>
+    <property name="java.class.path" value="/home/ubuntu/IdeaProjects/picom_back/target/test-classes:/home/ubuntu/IdeaProjects/picom_back/target/classes:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.5.5/spring-boot-starter-data-jpa-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.5.5/spring-boot-starter-aop-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aop/5.3.10/spring-aop-5.3.10.jar:/home/ubuntu/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.5.5/spring-boot-starter-jdbc-2.5.5.jar:/home/ubuntu/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jdbc/5.3.10/spring-jdbc-5.3.10.jar:/home/ubuntu/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/home/ubuntu/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/ubuntu/.m2/repository/org/hibernate/hibernate-core/5.4.32.Final/hibernate-core-5.4.32.Final.jar:/home/ubuntu/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/ubuntu/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/home/ubuntu/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/ubuntu/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/ubuntu/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/ubuntu/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/ubuntu/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar:/home/ubuntu/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/home/ubuntu/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-jpa/2.5.5/spring-data-jpa-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-commons/2.5.5/spring-data-commons-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/spring-orm/5.3.10/spring-orm-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-context/5.3.10/spring-context-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-tx/5.3.10/spring-tx-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-beans/5.3.10/spring-beans-5.3.10.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aspects/5.3.10/spring-aspects-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/2.5.5/spring-boot-starter-data-rest-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.5.5/spring-data-rest-webmvc-3.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-rest-core/3.5.5/spring-data-rest-core-3.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/hateoas/spring-hateoas/1.3.4/spring-hateoas-1.3.4.jar:/home/ubuntu/.m2/repository/org/springframework/plugin/spring-plugin-core/2.0.0.RELEASE/spring-plugin-core-2.0.0.RELEASE.jar:/home/ubuntu/.m2/repository/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.5.5/spring-boot-starter-thymeleaf-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.5/spring-boot-starter-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.5.5/spring-boot-starter-logging-2.5.5.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-classic/1.2.6/logback-classic-1.2.6.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-core/1.2.6/logback-core-1.2.6.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.14.1/log4j-to-slf4j-2.14.1.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/ubuntu/.m2/repository/org/slf4j/jul-to-slf4j/1.7.32/jul-to-slf4j-1.7.32.jar:/home/ubuntu/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/ubuntu/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/home/ubuntu/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.12.RELEASE/thymeleaf-spring5-3.0.12.RELEASE.jar:/home/ubuntu/.m2/repository/org/thymeleaf/thymeleaf/3.0.12.RELEASE/thymeleaf-3.0.12.RELEASE.jar:/home/ubuntu/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/ubuntu/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/ubuntu/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.5.5/spring-boot-starter-validation-2.5.5.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.53/tomcat-embed-el-9.0.53.jar:/home/ubuntu/.m2/repository/org/hibernate/validator/hibernate-validator/6.2.0.Final/hibernate-validator-6.2.0.Final.jar:/home/ubuntu/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.5.5/spring-boot-starter-web-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.5.5/spring-boot-starter-json-2.5.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.5/jackson-datatype-jdk8-2.12.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.5/jackson-datatype-jsr310-2.12.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.12.5/jackson-module-parameter-names-2.12.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.5.5/spring-boot-starter-tomcat-2.5.5.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.53/tomcat-embed-core-9.0.53.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.53/tomcat-embed-websocket-9.0.53.jar:/home/ubuntu/.m2/repository/org/springframework/spring-web/5.3.10/spring-web-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-webmvc/5.3.10/spring-webmvc-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-expression/5.3.10/spring-expression-5.3.10.jar:/home/ubuntu/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/ubuntu/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/home/ubuntu/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-devtools/2.5.5/spring-boot-devtools-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot/2.5.5/spring-boot-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.5.5/spring-boot-autoconfigure-2.5.5.jar:/home/ubuntu/.m2/repository/mysql/mysql-connector-java/8.0.26/mysql-connector-java-8.0.26.jar:/home/ubuntu/.m2/repository/org/postgresql/postgresql/42.2.23/postgresql-42.2.23.jar:/home/ubuntu/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.5.5/spring-boot-starter-test-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test/2.5.5/spring-boot-test-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.5.5/spring-boot-test-autoconfigure-2.5.5.jar:/home/ubuntu/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/home/ubuntu/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/ubuntu/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/ubuntu/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/ubuntu/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/ubuntu/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/ubuntu/.m2/repository/org/assertj/assertj-core/3.19.0/assertj-core-3.19.0.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/ubuntu/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ubuntu/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/3.9.0/mockito-core-3.9.0.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.22/byte-buddy-agent-1.10.22.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-junit-jupiter/3.9.0/mockito-junit-jupiter-3.9.0.jar:/home/ubuntu/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/home/ubuntu/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-core/5.3.10/spring-core-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jcl/5.3.10/spring-jcl-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-test/5.3.10/spring-test-5.3.10.jar:/home/ubuntu/.m2/repository/org/xmlunit/xmlunit-core/2.8.2/xmlunit-core-2.8.2.jar:/home/ubuntu/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
@@ -11,37 +11,37 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
-    <property name="sun.boot.library.path" value="/home/bazev/.jdks/openjdk-17.0.1/lib"/>
-    <property name="sun.java.command" value="/home/bazev/IdeaProjects/picom_back/picom/target/surefire/surefirebooter10930260377930187485.jar /home/bazev/IdeaProjects/picom_back/picom/target/surefire 2021-11-09T16-35-08_861-jvmRun1 surefire13412234439883705372tmp surefire_05800801564151417926tmp"/>
+    <property name="sun.boot.library.path" value="/home/ubuntu/.jdks/openjdk-17.0.1/lib"/>
+    <property name="sun.java.command" value="/home/ubuntu/IdeaProjects/picom_back/target/surefire/surefirebooter5018753258343526159.jar /home/ubuntu/IdeaProjects/picom_back/target/surefire 2021-11-15T18-43-17_931-jvmRun1 surefire15460983262227482751tmp surefire_09513268089794712056tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/bazev/IdeaProjects/picom_back/picom/target/test-classes:/home/bazev/IdeaProjects/picom_back/picom/target/classes:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.5.5/spring-boot-starter-data-jpa-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.5.5/spring-boot-starter-aop-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/spring-aop/5.3.10/spring-aop-5.3.10.jar:/home/bazev/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.5.5/spring-boot-starter-jdbc-2.5.5.jar:/home/bazev/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/home/bazev/.m2/repository/org/springframework/spring-jdbc/5.3.10/spring-jdbc-5.3.10.jar:/home/bazev/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/home/bazev/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/bazev/.m2/repository/org/hibernate/hibernate-core/5.4.32.Final/hibernate-core-5.4.32.Final.jar:/home/bazev/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/bazev/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/bazev/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/home/bazev/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/bazev/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/bazev/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/bazev/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/bazev/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/bazev/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar:/home/bazev/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar:/home/bazev/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/home/bazev/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/bazev/.m2/repository/org/springframework/data/spring-data-jpa/2.5.5/spring-data-jpa-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/data/spring-data-commons/2.5.5/spring-data-commons-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/spring-orm/5.3.10/spring-orm-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-context/5.3.10/spring-context-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-tx/5.3.10/spring-tx-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-beans/5.3.10/spring-beans-5.3.10.jar:/home/bazev/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/home/bazev/.m2/repository/org/springframework/spring-aspects/5.3.10/spring-aspects-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/2.5.5/spring-boot-starter-data-rest-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.5.5/spring-data-rest-webmvc-3.5.5.jar:/home/bazev/.m2/repository/org/springframework/data/spring-data-rest-core/3.5.5/spring-data-rest-core-3.5.5.jar:/home/bazev/.m2/repository/org/springframework/hateoas/spring-hateoas/1.3.4/spring-hateoas-1.3.4.jar:/home/bazev/.m2/repository/org/springframework/plugin/spring-plugin-core/2.0.0.RELEASE/spring-plugin-core-2.0.0.RELEASE.jar:/home/bazev/.m2/repository/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.5.5/spring-boot-starter-thymeleaf-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.5/spring-boot-starter-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.5.5/spring-boot-starter-logging-2.5.5.jar:/home/bazev/.m2/repository/ch/qos/logback/logback-classic/1.2.6/logback-classic-1.2.6.jar:/home/bazev/.m2/repository/ch/qos/logback/logback-core/1.2.6/logback-core-1.2.6.jar:/home/bazev/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.14.1/log4j-to-slf4j-2.14.1.jar:/home/bazev/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/bazev/.m2/repository/org/slf4j/jul-to-slf4j/1.7.32/jul-to-slf4j-1.7.32.jar:/home/bazev/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/bazev/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/home/bazev/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.12.RELEASE/thymeleaf-spring5-3.0.12.RELEASE.jar:/home/bazev/.m2/repository/org/thymeleaf/thymeleaf/3.0.12.RELEASE/thymeleaf-3.0.12.RELEASE.jar:/home/bazev/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/bazev/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/bazev/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.5.5/spring-boot-starter-validation-2.5.5.jar:/home/bazev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.53/tomcat-embed-el-9.0.53.jar:/home/bazev/.m2/repository/org/hibernate/validator/hibernate-validator/6.2.0.Final/hibernate-validator-6.2.0.Final.jar:/home/bazev/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.5.5/spring-boot-starter-web-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.5.5/spring-boot-starter-json-2.5.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.5/jackson-datatype-jdk8-2.12.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.5/jackson-datatype-jsr310-2.12.5.jar:/home/bazev/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.12.5/jackson-module-parameter-names-2.12.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.5.5/spring-boot-starter-tomcat-2.5.5.jar:/home/bazev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.53/tomcat-embed-core-9.0.53.jar:/home/bazev/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.53/tomcat-embed-websocket-9.0.53.jar:/home/bazev/.m2/repository/org/springframework/spring-web/5.3.10/spring-web-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-webmvc/5.3.10/spring-webmvc-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-expression/5.3.10/spring-expression-5.3.10.jar:/home/bazev/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/bazev/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/home/bazev/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-devtools/2.5.5/spring-boot-devtools-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot/2.5.5/spring-boot-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.5.5/spring-boot-autoconfigure-2.5.5.jar:/home/bazev/.m2/repository/mysql/mysql-connector-java/8.0.26/mysql-connector-java-8.0.26.jar:/home/bazev/.m2/repository/org/postgresql/postgresql/42.2.23/postgresql-42.2.23.jar:/home/bazev/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.5.5/spring-boot-starter-test-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-test/2.5.5/spring-boot-test-2.5.5.jar:/home/bazev/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.5.5/spring-boot-test-autoconfigure-2.5.5.jar:/home/bazev/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/home/bazev/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/bazev/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/bazev/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/bazev/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/bazev/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/bazev/.m2/repository/org/assertj/assertj-core/3.19.0/assertj-core-3.19.0.jar:/home/bazev/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/bazev/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/home/bazev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/bazev/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/bazev/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/bazev/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/bazev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/home/bazev/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/bazev/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/bazev/.m2/repository/org/mockito/mockito-core/3.9.0/mockito-core-3.9.0.jar:/home/bazev/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.22/byte-buddy-agent-1.10.22.jar:/home/bazev/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/bazev/.m2/repository/org/mockito/mockito-junit-jupiter/3.9.0/mockito-junit-jupiter-3.9.0.jar:/home/bazev/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/home/bazev/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/bazev/.m2/repository/org/springframework/spring-core/5.3.10/spring-core-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-jcl/5.3.10/spring-jcl-5.3.10.jar:/home/bazev/.m2/repository/org/springframework/spring-test/5.3.10/spring-test-5.3.10.jar:/home/bazev/.m2/repository/org/xmlunit/xmlunit-core/2.8.2/xmlunit-core-2.8.2.jar:/home/bazev/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:"/>
+    <property name="surefire.test.class.path" value="/home/ubuntu/IdeaProjects/picom_back/target/test-classes:/home/ubuntu/IdeaProjects/picom_back/target/classes:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.5.5/spring-boot-starter-data-jpa-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.5.5/spring-boot-starter-aop-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aop/5.3.10/spring-aop-5.3.10.jar:/home/ubuntu/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.5.5/spring-boot-starter-jdbc-2.5.5.jar:/home/ubuntu/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jdbc/5.3.10/spring-jdbc-5.3.10.jar:/home/ubuntu/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/home/ubuntu/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/home/ubuntu/.m2/repository/org/hibernate/hibernate-core/5.4.32.Final/hibernate-core-5.4.32.Final.jar:/home/ubuntu/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar:/home/ubuntu/.m2/repository/org/javassist/javassist/3.27.0-GA/javassist-3.27.0-GA.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy/1.10.22/byte-buddy-1.10.22.jar:/home/ubuntu/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/ubuntu/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar:/home/ubuntu/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/home/ubuntu/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:/home/ubuntu/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar:/home/ubuntu/.m2/repository/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar:/home/ubuntu/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar:/home/ubuntu/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-jpa/2.5.5/spring-data-jpa-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-commons/2.5.5/spring-data-commons-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/spring-orm/5.3.10/spring-orm-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-context/5.3.10/spring-context-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-tx/5.3.10/spring-tx-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-beans/5.3.10/spring-beans-5.3.10.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/home/ubuntu/.m2/repository/org/springframework/spring-aspects/5.3.10/spring-aspects-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/2.5.5/spring-boot-starter-data-rest-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.5.5/spring-data-rest-webmvc-3.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/data/spring-data-rest-core/3.5.5/spring-data-rest-core-3.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/hateoas/spring-hateoas/1.3.4/spring-hateoas-1.3.4.jar:/home/ubuntu/.m2/repository/org/springframework/plugin/spring-plugin-core/2.0.0.RELEASE/spring-plugin-core-2.0.0.RELEASE.jar:/home/ubuntu/.m2/repository/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.12.5/jackson-databind-2.12.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.12.5/jackson-core-2.12.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.12.5/jackson-annotations-2.12.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.5.5/spring-boot-starter-thymeleaf-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter/2.5.5/spring-boot-starter-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.5.5/spring-boot-starter-logging-2.5.5.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-classic/1.2.6/logback-classic-1.2.6.jar:/home/ubuntu/.m2/repository/ch/qos/logback/logback-core/1.2.6/logback-core-1.2.6.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.14.1/log4j-to-slf4j-2.14.1.jar:/home/ubuntu/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/ubuntu/.m2/repository/org/slf4j/jul-to-slf4j/1.7.32/jul-to-slf4j-1.7.32.jar:/home/ubuntu/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/ubuntu/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/home/ubuntu/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.12.RELEASE/thymeleaf-spring5-3.0.12.RELEASE.jar:/home/ubuntu/.m2/repository/org/thymeleaf/thymeleaf/3.0.12.RELEASE/thymeleaf-3.0.12.RELEASE.jar:/home/ubuntu/.m2/repository/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar:/home/ubuntu/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/ubuntu/.m2/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.5.5/spring-boot-starter-validation-2.5.5.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.53/tomcat-embed-el-9.0.53.jar:/home/ubuntu/.m2/repository/org/hibernate/validator/hibernate-validator/6.2.0.Final/hibernate-validator-6.2.0.Final.jar:/home/ubuntu/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.5.5/spring-boot-starter-web-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.5.5/spring-boot-starter-json-2.5.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.12.5/jackson-datatype-jdk8-2.12.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.12.5/jackson-datatype-jsr310-2.12.5.jar:/home/ubuntu/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.12.5/jackson-module-parameter-names-2.12.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.5.5/spring-boot-starter-tomcat-2.5.5.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.53/tomcat-embed-core-9.0.53.jar:/home/ubuntu/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.53/tomcat-embed-websocket-9.0.53.jar:/home/ubuntu/.m2/repository/org/springframework/spring-web/5.3.10/spring-web-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-webmvc/5.3.10/spring-webmvc-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-expression/5.3.10/spring-expression-5.3.10.jar:/home/ubuntu/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/ubuntu/.m2/repository/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar:/home/ubuntu/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-devtools/2.5.5/spring-boot-devtools-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot/2.5.5/spring-boot-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.5.5/spring-boot-autoconfigure-2.5.5.jar:/home/ubuntu/.m2/repository/mysql/mysql-connector-java/8.0.26/mysql-connector-java-8.0.26.jar:/home/ubuntu/.m2/repository/org/postgresql/postgresql/42.2.23/postgresql-42.2.23.jar:/home/ubuntu/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.5.5/spring-boot-starter-test-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test/2.5.5/spring-boot-test-2.5.5.jar:/home/ubuntu/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.5.5/spring-boot-test-autoconfigure-2.5.5.jar:/home/ubuntu/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/home/ubuntu/.m2/repository/net/minidev/json-smart/2.4.7/json-smart-2.4.7.jar:/home/ubuntu/.m2/repository/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar:/home/ubuntu/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar:/home/ubuntu/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/ubuntu/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/ubuntu/.m2/repository/org/assertj/assertj-core/3.19.0/assertj-core-3.19.0.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.2/junit-jupiter-5.7.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.2/junit-jupiter-api-5.7.2.jar:/home/ubuntu/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ubuntu/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-commons/1.7.2/junit-platform-commons-1.7.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.2/junit-jupiter-params-5.7.2.jar:/home/ubuntu/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.2/junit-jupiter-engine-5.7.2.jar:/home/ubuntu/.m2/repository/org/junit/platform/junit-platform-engine/1.7.2/junit-platform-engine-1.7.2.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/3.9.0/mockito-core-3.9.0.jar:/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.22/byte-buddy-agent-1.10.22.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-junit-jupiter/3.9.0/mockito-junit-jupiter-3.9.0.jar:/home/ubuntu/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/home/ubuntu/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/ubuntu/.m2/repository/org/springframework/spring-core/5.3.10/spring-core-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-jcl/5.3.10/spring-jcl-5.3.10.jar:/home/ubuntu/.m2/repository/org/springframework/spring-test/5.3.10/spring-test-5.3.10.jar:/home/ubuntu/.m2/repository/org/xmlunit/xmlunit-core/2.8.2/xmlunit-core-2.8.2.jar:/home/ubuntu/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/bazev"/>
+    <property name="user.home" value="/home/ubuntu"/>
     <property name="user.language" value="fr"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2021-10-19"/>
-    <property name="java.home" value="/home/bazev/.jdks/openjdk-17.0.1"/>
+    <property name="java.home" value="/home/ubuntu/.jdks/openjdk-17.0.1"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/bazev/IdeaProjects/picom_back/picom"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="basedir" value="/home/ubuntu/IdeaProjects/picom_back"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/bazev/IdeaProjects/picom_back/picom/target/surefire/surefirebooter10930260377930187485.jar"/>
+    <property name="surefire.real.class.path" value="/home/ubuntu/IdeaProjects/picom_back/target/surefire/surefirebooter5018753258343526159.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.1+12-39"/>
-    <property name="user.name" value="bazev"/>
+    <property name="user.name" value="ubuntu"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.11.0-38-generic"/>
+    <property name="os.version" value="5.11.0-27-generic"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/bazev/.m2/repository"/>
+    <property name="localRepository" value="/home/ubuntu/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="idea.version" value="2021.2.3"/>
     <property name="java.version" value="17.0.1"/>
-    <property name="user.dir" value="/home/bazev/IdeaProjects/picom_back/picom"/>
+    <property name="user.dir" value="/home/ubuntu/IdeaProjects/picom_back"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -52,5 +52,821 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="contextLoads" classname="fr.businesscase.eb.picom.PicomApplicationTests" time="0.096"/>
+  <testcase name="contextLoads" classname="fr.businesscase.eb.picom.PicomApplicationTests" time="0.001">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'initController': Invocation of init method failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'date_end' in 'field list'
+</error>
+    <system-out><![CDATA[18:43:18.955 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:43:18.972 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:43:19.040 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [fr.businesscase.eb.picom.PicomApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+18:43:19.064 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [fr.businesscase.eb.picom.PicomApplicationTests], using SpringBootContextLoader
+18:43:19.070 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [fr.businesscase.eb.picom.PicomApplicationTests]: class path resource [fr/businesscase/eb/picom/PicomApplicationTests-context.xml] does not exist
+18:43:19.072 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [fr.businesscase.eb.picom.PicomApplicationTests]: class path resource [fr/businesscase/eb/picom/PicomApplicationTestsContext.groovy] does not exist
+18:43:19.073 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [fr.businesscase.eb.picom.PicomApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:43:19.076 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [fr.businesscase.eb.picom.PicomApplicationTests]: PicomApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:43:19.180 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [fr.businesscase.eb.picom.PicomApplicationTests]
+18:43:19.295 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/ubuntu/IdeaProjects/picom_back/target/classes/fr/businesscase/eb/picom/PicomApplication.class]
+18:43:19.297 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration fr.businesscase.eb.picom.PicomApplication for test class fr.businesscase.eb.picom.PicomApplicationTests
+18:43:19.407 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [fr.businesscase.eb.picom.PicomApplicationTests]: using defaults.
+18:43:19.408 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+18:43:19.432 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@616ac46a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@67b9b51a, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1205bd62, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7ef27d7f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@490caf5f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6337c201, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5c669da8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@31920ade, org.springframework.test.context.event.EventPublishingTestExecutionListener@1d483de4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4032d386, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@28d18df5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@934b6cb, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@55cf0d14, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3b74ac8, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@27adc16e]
+18:43:19.437 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5e403b4a testClass = PicomApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@5117dd67 testClass = PicomApplicationTests, locations = '{}', classes = '{class fr.businesscase.eb.picom.PicomApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@68267da0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6a2b953e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@484970b0, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@f2ff811, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@46fa7c39, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@6f1fba17], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+18:43:19.488 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.5)
+
+2021-11-15 18:43:19.919  INFO 8567 --- [           main] f.b.eb.picom.PicomApplicationTests       : Starting PicomApplicationTests using Java 17.0.1 on ubuntu with PID 8567 (started by ubuntu in /home/ubuntu/IdeaProjects/picom_back)
+2021-11-15 18:43:19.924  INFO 8567 --- [           main] f.b.eb.picom.PicomApplicationTests       : No active profile set, falling back to default profiles: default
+2021-11-15 18:43:20.879  INFO 8567 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-15 18:43:20.973  INFO 8567 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 7 JPA repository interfaces.
+2021-11-15 18:43:21.697  INFO 8567 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-15 18:43:21.766  INFO 8567 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-15 18:43:21.962  INFO 8567 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-15 18:43:22.105  INFO 8567 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-15 18:43:22.390  INFO 8567 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-15 18:43:22.412  INFO 8567 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Hibernate: alter table advert add column date_create date
+Hibernate: alter table advert add column date_end date not null
+2021-11-15 18:43:23.705  WARN 8567 --- [           main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table advert add column date_end date not null" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table advert add column date_end date not null" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:562) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:583) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:297) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:75) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.5.jar:2.5.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '0000-00-00' for column 'date_end' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	... 100 common frames omitted
+
+Hibernate: alter table advert add column date_start date not null
+2021-11-15 18:43:23.709  WARN 8567 --- [           main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table advert add column date_start date not null" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table advert add column date_start date not null" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:562) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:583) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:297) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:75) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.5.jar:2.5.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect date value: '0000-00-00' for column 'date_start' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	... 100 common frames omitted
+
+Hibernate: alter table advert add column title varchar(255)
+Hibernate: alter table area add column name varchar(255)
+Hibernate: create table users (dtype varchar(31) not null, id bigint not null auto_increment, email varchar(255), first_name varchar(255), last_name varchar(255), password varchar(255), numero_tel varchar(15), primary key (id)) engine=InnoDB
+Hibernate: alter table users drop index UK_6dotkott2kjsp8vw4d0m25fb7
+Hibernate: alter table users add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: alter table users drop index UK_2hhtmynecxposy1wrms2w0amd
+Hibernate: alter table users add constraint UK_2hhtmynecxposy1wrms2w0amd unique (numero_tel)
+Hibernate: alter table advert add constraint FK218k9benia3ajhujbe81ueuae foreign key (customer_id) references users (id)
+2021-11-15 18:43:24.411  WARN 8567 --- [           main] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table advert add constraint FK218k9benia3ajhujbe81ueuae foreign key (customer_id) references users (id)" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table advert add constraint FK218k9benia3ajhujbe81ueuae foreign key (customer_id) references users (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:562) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:507) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.5.jar:2.5.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`picom`.`#sql-853_b`, CONSTRAINT `FK218k9benia3ajhujbe81ueuae` FOREIGN KEY (`customer_id`) REFERENCES `users` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	... 99 common frames omitted
+
+Hibernate: alter table carte_bancaire add constraint FKm6sy450uf77eac1myvi9xiqjd foreign key (client_id) references users (id)
+2021-11-15 18:43:24.683  INFO 8567 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-15 18:43:24.692  INFO 8567 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select area0_.id as id1_3_, area0_.name as name2_3_ from area area0_
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select slottime0_.id as id1_6_, slottime0_.start as start2_6_ from slot_time slottime0_
+Hibernate: select user0_.id as id2_7_, user0_.email as email3_7_, user0_.first_name as first_na4_7_, user0_.last_name as last_nam5_7_, user0_.password as password6_7_, user0_.numero_tel as numero_t7_7_, user0_.dtype as dtype1_7_ from users user0_
+Hibernate: insert into users (email, first_name, last_name, password, numero_tel, dtype) values (?, ?, ?, ?, ?, 'Customer')
+Hibernate: select slottime0_.id as id1_6_, slottime0_.start as start2_6_ from slot_time slottime0_
+Hibernate: select area0_.id as id1_3_, area0_.name as name2_3_ from area area0_
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select arrets0_.area_id as area_id3_4_0_, arrets0_.id as id1_4_0_, arrets0_.id as id1_4_1_, arrets0_.area_id as area_id3_4_1_, arrets0_.nom as nom2_4_1_ from arret arrets0_ where arrets0_.area_id=?
+Hibernate: select area0_.id as id1_3_, area0_.name as name2_3_ from area area0_ where area0_.name=?
+Hibernate: select area0_.id as id1_3_, area0_.name as name2_3_ from area area0_ where area0_.name=?
+Hibernate: select area0_.id as id1_3_, area0_.name as name2_3_ from area area0_ where area0_.name=?
+Hibernate: insert into advert (customer_id, date_create, date_end, date_start, title, dtype) values (?, ?, ?, ?, ?, 'AdvertImage')
+2021-11-15 18:43:25.798  WARN 8567 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1054, SQLState: 42S22
+2021-11-15 18:43:25.798 ERROR 8567 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unknown column 'date_end' in 'field list'
+2021-11-15 18:43:25.803  WARN 8567 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'initController': Invocation of init method failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+2021-11-15 18:43:25.805  INFO 8567 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-15 18:43:25.807  INFO 8567 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-15 18:43:25.817  INFO 8567 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-15 18:43:25.827  INFO 8567 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-15 18:43:25.882 ERROR 8567 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'initController': Invocation of init method failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.5.jar:2.5.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.5.5.jar:2.5.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.10.jar:5.3.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy123.save(Unknown Source) ~[na:na]
+	at fr.businesscase.eb.picom.service.impl.AdvertServiceImpl.recordAdvertPicture(AdvertServiceImpl.java:33) ~[classes/:na]
+	at fr.businesscase.eb.picom.controller.InitController.init(InitController.java:105) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157) ~[spring-beans-5.3.10.jar:5.3.10]
+	... 84 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3196) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3802) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:99) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:720) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:706) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.10.jar:5.3.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy112.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:597) ~[spring-data-jpa-2.5.5.jar:2.5.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.10.jar:5.3.10]
+	... 100 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'date_end' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1350) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	... 147 common frames omitted
+
+2021-11-15 18:43:25.885 ERROR 8567 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@616ac46a] to prepare test instance [fr.businesscase.eb.picom.PicomApplicationTests@1abea1ed]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'initController': Invocation of init method failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.5.jar:2.5.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.10.jar:5.3.10]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.10.jar:5.3.10]
+	... 67 common frames omitted
+Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.5.5.jar:2.5.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.10.jar:5.3.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy123.save(Unknown Source) ~[na:na]
+	at fr.businesscase.eb.picom.service.impl.AdvertServiceImpl.recordAdvertPicture(AdvertServiceImpl.java:33) ~[classes/:na]
+	at fr.businesscase.eb.picom.controller.InitController.init(InitController.java:105) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157) ~[spring-beans-5.3.10.jar:5.3.10]
+	... 84 common frames omitted
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3196) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3802) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:330) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:287) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:193) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:123) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:99) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:720) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:706) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.10.jar:5.3.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy112.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:597) ~[spring-data-jpa-2.5.5.jar:2.5.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.5.5.jar:2.5.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.10.jar:5.3.10]
+	... 100 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'date_end' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1350) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.26.jar:8.0.26]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	... 147 common frames omitted
+
+]]></system-out>
+  </testcase>
 </testsuite>

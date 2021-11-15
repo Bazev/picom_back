@@ -17,19 +17,23 @@ public abstract class User {
     @Column(name = "id")
     private Long id;
 
+    @JsonIgnore
     @NotBlank(message = "Merci de préciser un nom")
     @Column(name = "lastName")
     private String lastName;
 
+    @JsonIgnore
     @NotBlank(message = "Merci de préciser un prenom")
     @Column(name = "firstName")
     private String firstName;
 
+    @JsonIgnore
     @NotBlank(message = "Merci de rentrer votre e-mail")
     @Email(message = "Merci de préciser un email au bon format")
     @Column(name = "email", unique = true)
     private String email;
 
+    @JsonIgnore
     @Size(message = "Merci de saisir un mot de passe contenant 8 caractère minimum", min = 8)
     @NotBlank(message = "Merci de préciser un mot de passe")
     @Column(name = "password")
