@@ -58,12 +58,20 @@ public class PiComRestController {
     }
 
     //connexion
+//    @CrossOrigin(origins = "*")
+//    @PostMapping("ws/login/{email}/{password}")
+//    boolean getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
+//         usersService.checkEmailAndPassword(email, password);
+//        System.out.println("connexion de"+email);
+//         return true;
+//    }
+
     @CrossOrigin(origins = "*")
     @PostMapping("ws/login/{email}/{password}")
-    boolean getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
-         usersService.checkEmailAndPassword(email, password);
+    public User getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
+     User user = usersService.getUser(email, password);
         System.out.println("connexion de"+email);
-         return true;
+        return user;
     }
 
     //add advert Picture
@@ -119,7 +127,6 @@ public class PiComRestController {
     }
 
     // get adberts by customer
-    @CrossOrigin(origins = "*")
     @GetMapping("ws/customer/{id}/adverts")
     public List<Advert> getAdvertsByCustomer(@PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);

@@ -11,7 +11,7 @@ public class Area {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "nom")
+    @Column(name = "name")
     private String name;
 
     @OneToMany(mappedBy = "area", fetch = FetchType.EAGER)
