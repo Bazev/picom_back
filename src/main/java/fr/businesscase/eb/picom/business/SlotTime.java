@@ -1,5 +1,7 @@
 package fr.businesscase.eb.picom.business;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -14,6 +16,7 @@ public class SlotTime {
     @Column(name = "start")
     private int start;
 
+    @JsonIgnore
     @ManyToMany(mappedBy = "slotTimes")
     private List<Advert> adverts;
 

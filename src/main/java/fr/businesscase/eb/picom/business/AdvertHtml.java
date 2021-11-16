@@ -25,4 +25,11 @@ public class AdvertHtml extends Advert {
         super(dateCreation, dateDebut, dateFin, customer, areas, slotTimes, intitule);
         this.contenu = contenu;
     }
+
+    @Override
+    public String toString() {
+        return "AdvertHtml{" +
+                "contenu='" + contenu + '\'' +
+                '}';
+    }
 }

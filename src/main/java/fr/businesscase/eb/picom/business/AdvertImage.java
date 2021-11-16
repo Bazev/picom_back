@@ -14,4 +14,9 @@ public class AdvertImage extends Advert {
 
     public AdvertImage() {
     }
+
+    @Override
+    public String toString() {
+        return "AdvertImage{}";
+    }
 }

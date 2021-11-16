@@ -117,7 +117,8 @@ public class PiComRestController {
 
     //add user
     @PostMapping("ws/addCustomer/{lastname}/{firstname}/{email}/{password}/{numtel}")
-    public Customer addCustomer(@PathVariable String lastname, @PathVariable String firstname, @PathVariable String email, @PathVariable String password) {
+    public Customer addCustomer(@PathVariable String lastname, @PathVariable String firstname,
+                                @PathVariable String email, @PathVariable String password) {
         Customer customer = new Customer();
         customer.setLastName(lastname);
         customer.setFirstName(firstname);
@@ -126,12 +127,19 @@ public class PiComRestController {
         return usersService.recordCustomer(customer);
     }
 
-    // get adberts by customer
+    // get adverts by customer
     @GetMapping("ws/customer/{id}/adverts")
     public List<Advert> getAdvertsByCustomer(@PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
         return advertService.getAdvertsByCustomer(customer);
 
+    }
+
+    //get advert by id
+    @GetMapping("ws/advert/{id}")
+    public Advert getAdvertById(@PathVariable Long id){
+        Advert advert = advertService.getAdvert(id);
+        return advert;
     }
 
 }

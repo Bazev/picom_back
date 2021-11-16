@@ -21,7 +21,7 @@ public class InitController {
     private final AdvertService advertService;
     private final SlotTimeService slotTimeService;
     private static Random random = new Random();
-    SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd");
+    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
     public InitController(UsersService usersService, AreaService areaService, ArretService arretService, AdvertService advertService, SlotTimeService slotTimeService) {
         this.usersService = usersService;
@@ -91,7 +91,7 @@ public class InitController {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                    annonceImage.setTitle("Intitule"+j);
+                    annonceImage.setTitle("Titre"+j);
                     List<SlotTime> slotTimeList = slotTimeService.getSlotTimes();
                     slotTimeList.add(slotTimeService.getSlotTime(10));
                     slotTimeList.add(slotTimeService.getSlotTime(11));

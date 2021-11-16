@@ -58,4 +58,9 @@ public class AdvertServiceImpl implements AdvertService {
         return advertRepository.findAll(pageable);
     }
 
+    @Override
+    public Advert getAdvert(Long id) {
+        return advertRepository.findById(id).orElse(null);
+    }
+
 }

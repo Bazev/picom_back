@@ -24,4 +24,6 @@ public interface AdvertService {
     Object getAdverts(Pageable pageable, Customer customer);
 
     Page<Advert> getAdverts(Pageable pageable);
+
+    Advert getAdvert(Long id);
 }
