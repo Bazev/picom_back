@@ -1,5 +1,5 @@
-fr/businesscase/eb/picom/business/Administrator.class
 fr/businesscase/eb/picom/business/User.class
+fr/businesscase/eb/picom/business/Administrator.class
 fr/businesscase/eb/picom/business/AdvertHtml.class
 fr/businesscase/eb/picom/Repository/UsersRepository.class
 fr/businesscase/eb/picom/Repository/CustomerRepository.class
