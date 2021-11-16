@@ -12,10 +12,9 @@ import java.util.List;
 @Entity
 public abstract class Advert {
 
-    @JsonIgnore
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+    @Column(name = "id")
     private Long id;
 
     @Temporal(TemporalType.DATE)
@@ -61,15 +60,16 @@ public abstract class Advert {
         dateCreate = new Date();
     }
 
-    public Advert(Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title) {
-        this.dateCreate = dateCreate;
-        this.dateStart = dateStart;
-        this.dateEnd = dateEnd;
-        this.customer = customer;
-        this.areas = areas;
-        this.slotTimes = slotTimes;
-        this.title = title;
-    }
+//    public Advert(Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title, Long id) {
+//        this.dateCreate = dateCreate;
+//        this.dateStart = dateStart;
+//        this.dateEnd = dateEnd;
+//        this.customer = customer;
+//        this.areas = areas;
+//        this.slotTimes = slotTimes;
+//        this.title = title;
+//        this.id =id;
+//    }
 
     public String getTitle() {
         return title;

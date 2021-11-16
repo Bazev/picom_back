@@ -7,10 +7,10 @@ import java.util.List;
 @Entity
 public class AdvertImage extends Advert {
 
-    public AdvertImage(Date dateCreation, Date dateDebut, Date dateFin, Customer customer,
-                       List<Area> areas, List<SlotTime> slotTimes, String intitule) {
-        super(dateCreation, dateDebut, dateFin, customer, areas, slotTimes, intitule);
-    }
+//    public AdvertImage(Date dateCreation, Date dateDebut, Date dateFin, Customer customer,
+//                       List<Area> areas, List<SlotTime> slotTimes, String intitule) {
+//        super(dateCreation, dateDebut, dateFin, customer, areas, slotTimes, intitule);
+//    }
 
     public AdvertImage() {
     }

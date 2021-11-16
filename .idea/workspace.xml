@@ -5,27 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c39880ab-95c2-4445-9ed9-8510c2924e0c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f5d844fa-e716-47e2-a3c6-9b86f121ede8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f5d844fa-e716-47e2-a3c6-9b86f121ede8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/AdvertHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/AdvertHtml.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/AdvertImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/AdvertImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/InitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/InitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/PiComRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/PiComRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/AdvertService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/AdvertService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/AdvertServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/AdvertServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/InitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/InitController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/PiComRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/PiComRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/AdvertServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/AdvertServiceImpl.class" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-fr.businesscase.eb.picom.PicomApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-fr.businesscase.eb.picom.PicomApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/fr.businesscase.eb.picom.PicomApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/fr.businesscase.eb.picom.PicomApplicationTests.txt" afterDir="false" />
->>>>>>> 49fbd06a4a1e960c79d1152f940ccb02756cddc3
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +73,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MesProjets/picom.FX" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -119,15 +106,9 @@
       <workItem from="1636808504978" duration="2768000" />
       <workItem from="1636886080343" duration="2253000" />
       <workItem from="1636973119529" duration="1033000" />
-<<<<<<< HEAD
       <workItem from="1636981575409" duration="3754000" />
       <workItem from="1637049198795" duration="879000" />
       <workItem from="1637070665261" duration="6143000" />
-=======
-      <workItem from="1636981575409" duration="2506000" />
-      <workItem from="1636998087994" duration="180000" />
-      <workItem from="1636998317458" duration="2362000" />
->>>>>>> 49fbd06a4a1e960c79d1152f940ccb02756cddc3
     </task>
     <servers />
   </component>

@@ -11,7 +11,6 @@ import javax.validation.constraints.Size;
 @Entity
 public abstract class User {
 
-    @JsonIgnore
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
