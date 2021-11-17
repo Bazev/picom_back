@@ -6,6 +6,7 @@ import java.util.List;
 @Table(name = "Area")
 @Entity
 public class Area {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

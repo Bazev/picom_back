@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c39880ab-95c2-4445-9ed9-8510c2924e0c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/azure/azureSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f5d844fa-e716-47e2-a3c6-9b86f121ede8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f5d844fa-e716-47e2-a3c6-9b86f121ede8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/AdvertHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/AdvertHtml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/AdvertImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/AdvertImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Area.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-fr.businesscase.eb.picom.PicomApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-fr.businesscase.eb.picom.PicomApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/fr.businesscase.eb.picom.PicomApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/fr.businesscase.eb.picom.PicomApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +68,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -72,13 +79,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowAnt.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MesProjets/picom.FX" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.43793103" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RunManager">
     <configuration name="PicomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -109,6 +121,11 @@
       <workItem from="1636981575409" duration="3754000" />
       <workItem from="1637049198795" duration="879000" />
       <workItem from="1637070665261" duration="6143000" />
+      <workItem from="1637135960839" duration="2511000" />
+      <workItem from="1637146413660" duration="1597000" />
+      <workItem from="1637150275962" duration="57000" />
+      <workItem from="1637150357621" duration="2030000" />
+      <workItem from="1637152948267" duration="2141000" />
     </task>
     <servers />
   </component>
