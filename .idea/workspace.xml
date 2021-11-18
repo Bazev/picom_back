@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Arret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Arret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
@@ -151,7 +152,7 @@
       <workItem from="1637150275962" duration="57000" />
       <workItem from="1637150357621" duration="2030000" />
       <workItem from="1637152948267" duration="5905000" />
-      <workItem from="1637222357030" duration="1192000" />
+      <workItem from="1637222357030" duration="1517000" />
     </task>
     <servers />
   </component>
