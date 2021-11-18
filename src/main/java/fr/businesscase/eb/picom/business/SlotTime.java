@@ -8,7 +8,9 @@ import java.util.List;
 @Table(name = "slot_time")
 @Entity
 public class SlotTime {
+
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;

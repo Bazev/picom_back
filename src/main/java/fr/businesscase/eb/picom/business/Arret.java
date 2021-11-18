@@ -1,17 +1,21 @@
 package fr.businesscase.eb.picom.business;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Table(name = "arret")
 @Entity
 public class Arret {
+
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "area_id")
     private Area area;
 

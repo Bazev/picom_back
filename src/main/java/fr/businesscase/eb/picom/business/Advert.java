@@ -39,14 +39,12 @@ public abstract class Advert {
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    @JsonIgnore
     @ManyToMany
     @JoinTable(name = "advert_zones",
             joinColumns = @JoinColumn(name = "advert_id"),
             inverseJoinColumns = @JoinColumn(name = "zones_id"))
     private List<Area> areas;
 
-    @JsonIgnore
     @ManyToMany
     @JoinTable(name = "advert_slot_time",
             joinColumns = @JoinColumn(name = "advert_id"),

@@ -1,5 +1,7 @@
 package fr.businesscase.eb.picom.business;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -8,6 +10,7 @@ import java.util.List;
 public class Area {
 
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
@@ -15,9 +18,11 @@ public class Area {
     @Column(name = "name")
     private String name;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "area", fetch = FetchType.EAGER)
     private List<Arret> arrets;
 
+    @JsonIgnore
     @ManyToMany(mappedBy = "areas")
     private List<Advert> adverts;
 
