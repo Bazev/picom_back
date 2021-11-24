@@ -57,15 +57,6 @@ public class PiComRestController {
         return areaService.deleteArea(id);
     }
 
-    //connexion
-//    @CrossOrigin(origins = "*")
-//    @PostMapping("ws/login/{email}/{password}")
-//    boolean getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
-//         usersService.checkEmailAndPassword(email, password);
-//        System.out.println("connexion de"+email);
-//         return true;
-//    }
-
     @CrossOrigin(origins = "*")
     @PostMapping("ws/login/{email}/{password}")
     public User getPasswordByEmail(@PathVariable String email, @PathVariable String password) {

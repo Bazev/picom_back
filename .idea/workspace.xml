@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c39880ab-95c2-4445-9ed9-8510c2924e0c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f5d844fa-e716-47e2-a3c6-9b86f121ede8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f5d844fa-e716-47e2-a3c6-9b86f121ede8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Arret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Arret.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-fr.businesscase.eb.picom.PicomApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-fr.businesscase.eb.picom.PicomApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/fr.businesscase.eb.picom.PicomApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/fr.businesscase.eb.picom.PicomApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/PiComRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/PiComRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,51 +74,36 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowAnt.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MesProjets/picom.FX" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43793103" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Spring Boot.PicomApplication">
-    <configuration name="Deploy Spring Cloud Services: picom_back" type="AZURE_SPRING_CLOUD_SUPPORT" factoryName="Deploy Spring Cloud Services">
-      <SpringCloudAppConfig>
-        <option name="activeDeploymentName" />
-        <option name="appName" value="springcloud-app-20211117153542" />
-        <option name="clusterName" value="picom" />
-        <option name="deployment">
-          <SpringCloudDeploymentConfig>
-            <option name="cpu" value="1" />
-            <option name="deploymentName" />
-            <option name="enablePersistentStorage" value="false" />
-            <option name="environment" />
-            <option name="instanceCount" value="1" />
-            <option name="jvmOptions" value="" />
-            <option name="memoryInGB" value="1" />
-            <option name="runtimeVersion" value="Java_8" />
-          </SpringCloudDeploymentConfig>
-        </option>
-        <option name="isPublic" value="false" />
-        <option name="resourceGroup" />
-        <option name="runtimeVersion" />
-        <option name="subscriptionId" value="0418d27f-b145-48b5-b020-63062603f7c2" />
-      </SpringCloudAppConfig>
-      <method v="2">
-        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
-      </method>
-    </configuration>
-    <configuration name="PicomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <component name="RunManager">
+    <configuration name="PicomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="picom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.businesscase.eb.picom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="fr.businesscase.eb.picom.PicomApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PicomApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -152,7 +130,12 @@
       <workItem from="1637150275962" duration="57000" />
       <workItem from="1637150357621" duration="2030000" />
       <workItem from="1637152948267" duration="5905000" />
-      <workItem from="1637222357030" duration="1517000" />
+      <workItem from="1637222357030" duration="15947000" />
+      <workItem from="1637404683071" duration="31000" />
+      <workItem from="1637654698100" duration="111000" />
+      <workItem from="1637654878564" duration="14000" />
+      <workItem from="1637755639616" duration="1574000" />
+      <workItem from="1637759969537" duration="2486000" />
     </task>
     <servers />
   </component>
@@ -268,5 +251,14 @@
     <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-el" />
     <option featureType="dependencySupport" implementationName="java:com.sun.activation:jakarta.activation" />
     <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-api" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/picom_back$PicomApplication.ic" NAME="PicomApplication Coverage Results" MODIFIED="1637756641386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>fr.businesscase.eb.picom.*</FILTER>
+    </SUITE>
   </component>
 </project>
