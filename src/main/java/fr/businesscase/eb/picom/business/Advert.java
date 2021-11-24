@@ -40,15 +40,9 @@ public abstract class Advert {
     private Customer customer;
 
     @ManyToMany
-    @JoinTable(name = "advert_zones",
-            joinColumns = @JoinColumn(name = "advert_id"),
-            inverseJoinColumns = @JoinColumn(name = "zones_id"))
     private List<Area> areas;
 
     @ManyToMany
-    @JoinTable(name = "advert_slot_time",
-            joinColumns = @JoinColumn(name = "advert_id"),
-            inverseJoinColumns = @JoinColumn(name = "slot_times_id"))
     private List<SlotTime> slotTimes;
 
     @Column(name = "title")

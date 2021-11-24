@@ -10,7 +10,6 @@ import java.util.List;
 public class SlotTime {
 
     @Id
-    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
@@ -22,13 +21,11 @@ public class SlotTime {
     @ManyToMany(mappedBy = "slotTimes")
     private List<Advert> adverts;
 
-
-    public SlotTime(int start) {
-        this.start = start;
-    }
-
     public SlotTime() {
 
+    }
+    public SlotTime(int start) {
+        this.start = start;
     }
 
     public List<Advert> getAnnonces() {

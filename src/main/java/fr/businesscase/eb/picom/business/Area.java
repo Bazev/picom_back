@@ -18,7 +18,7 @@ public class Area {
     private String name;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "area", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "area")
     private List<Arret> arrets;
 
     @JsonIgnore

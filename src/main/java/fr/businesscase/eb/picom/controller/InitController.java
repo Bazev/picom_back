@@ -34,15 +34,15 @@ public class InitController {
     @PostConstruct
     private void init() {
         /*
-        Ajout de 20 zones si la liste des zones est vide
+        Ajout de 10 zones si la liste des zones est vide
         et 5 arrets par zone
          */
         if (areaService.getAreas().isEmpty()) {
-            for (int i = 1; i <= 20; i++) {
+            for (int i = 1; i <= 10; i++) {
                 Area area = new Area();
                 area.setName("Zone" + i);
                 areaService.recordArea(area);
-                for(int j = 1; j <=10; j++) {
+                for(int j = 1; j <=5; j++) {
                     arretService.ajouterArret("Arret"+j, area.getId());
                 }
             }
