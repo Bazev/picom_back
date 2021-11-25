@@ -6,11 +6,12 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-public abstract class Advert {
+public abstract class Advert  implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,8 +43,8 @@ public abstract class Advert {
     @ManyToMany
     private List<Area> areas;
 
-    @ManyToMany
-    private List<SlotTime> slotTimes;
+   @ManyToMany
+   private List<SlotTime> slotTimes;
 
     @Column(name = "title")
     private String title;

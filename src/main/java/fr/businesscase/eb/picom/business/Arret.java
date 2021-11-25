@@ -3,10 +3,11 @@ package fr.businesscase.eb.picom.business;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 
 @Table(name = "arret")
 @Entity
-public class Arret {
+public class Arret implements Serializable {
 
     @Id
     @JsonIgnore

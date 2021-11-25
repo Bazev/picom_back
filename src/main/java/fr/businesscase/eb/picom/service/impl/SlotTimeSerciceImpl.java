@@ -28,11 +28,16 @@ public class SlotTimeSerciceImpl implements SlotTimeService {
 
     @Override
     public SlotTime getSlotTime(int debut) {
-        return null;
+        return slotTimeRepository.findByStart(debut);
     }
 
     @Override
     public SlotTime getHoure(Long id) {
         return slotTimeRepository.getById(id);
+    }
+
+    @Override
+    public SlotTime recordSlotTime(SlotTime slotTime) {
+        return slotTimeRepository.save(slotTime);
     }
 }

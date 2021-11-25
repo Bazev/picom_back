@@ -3,13 +3,15 @@ package fr.businesscase.eb.picom.business;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Table(name = "slot_time")
 @Entity
-public class SlotTime {
+public class SlotTime implements Serializable {
 
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
@@ -22,19 +24,13 @@ public class SlotTime {
     private List<Advert> adverts;
 
     public SlotTime() {
-
     }
+
     public SlotTime(int start) {
         this.start = start;
     }
 
-    public List<Advert> getAnnonces() {
-        return adverts;
-    }
 
-    public void setAnnonces(List<Advert> adverts) {
-        this.adverts = adverts;
-    }
 
     public int getStart() {
         return start;
@@ -50,6 +46,14 @@ public class SlotTime {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public List<Advert> getAdverts() {
+        return adverts;
+    }
+
+    public void setAdverts(List<Advert> adverts) {
+        this.adverts = adverts;
     }
 
     @Override

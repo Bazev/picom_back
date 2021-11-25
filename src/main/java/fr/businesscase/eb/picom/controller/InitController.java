@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import javax.annotation.PostConstruct;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
@@ -52,21 +53,11 @@ public class InitController {
         Ajout des tranches horaires
          */
         if (slotTimeService.getSlotTimes().isEmpty()) {
-            slotTimeService.addSlotTime(6);
-            slotTimeService.addSlotTime(7);
-            slotTimeService.addSlotTime(8);
-            slotTimeService.addSlotTime(9);
-            slotTimeService.addSlotTime(10);
-            slotTimeService.addSlotTime(11);
-            slotTimeService.addSlotTime(12);
-            slotTimeService.addSlotTime(13);
-            slotTimeService.addSlotTime(14);
-            slotTimeService.addSlotTime(15);
-            slotTimeService.addSlotTime(16);
-            slotTimeService.addSlotTime(17);
-            slotTimeService.addSlotTime(18);
-            slotTimeService.addSlotTime(19);
-            slotTimeService.addSlotTime(20);
+            for (int i = 6; i <= 20; i++ ) {
+                SlotTime slotTime = new SlotTime();
+                slotTime.setStart(i);
+                slotTimeService.recordSlotTime(slotTime);;
+            }
         }
 
         /*
@@ -80,6 +71,7 @@ public class InitController {
                 customer.setEmail("JohnDoe"+i+"@domaine.fr");
                 customer.setPassword("password"+random.nextInt(500));
                 usersService.recordCustomer(customer);
+
                 for (int j=1; j <= 4; j++) {
                     AdvertImage annonceImage = new AdvertImage();
                     annonceImage.setCustomer(customer);
@@ -92,15 +84,15 @@ public class InitController {
                         e.printStackTrace();
                     }
                     annonceImage.setTitle("Titre"+j);
-                    List<SlotTime> slotTimeList = slotTimeService.getSlotTimes();
+                    List<SlotTime> slotTimeList = new ArrayList<>();
                     slotTimeList.add(slotTimeService.getSlotTime(10));
                     slotTimeList.add(slotTimeService.getSlotTime(11));
                     slotTimeList.add(slotTimeService.getSlotTime(12));
-                    List<Area> areaList = areaService.getAreas();
-                    areaList.add(areaService.getArea("zone1"));
-                    areaList.add(areaService.getArea("zone4"));
-                    areaList.add(areaService.getArea("zone7"));
                     annonceImage.setSlotTimes(slotTimeList);
+                    List<Area> areaList = new ArrayList<>();
+                    areaList.add(areaService.getArea("Zone1"));
+                    areaList.add(areaService.getArea("Zone2"));
+                    areaList.add(areaService.getArea("Zone3"));
                     annonceImage.setAreas(areaList);
                     advertService.recordAdvertPicture(annonceImage);
                 }

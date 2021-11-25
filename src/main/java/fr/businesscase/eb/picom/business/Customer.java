@@ -1,15 +1,16 @@
 package fr.businesscase.eb.picom.business;
 
-import net.minidev.json.annotate.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Customer extends User {
+public class Customer extends User  implements Serializable {
 
     @Length(max = 15)
     @Column(name = "numero_tel", unique = true)

@@ -14,5 +14,7 @@ public interface SlotTimeService {
 
     SlotTime getHoure(Long id);
 
+    SlotTime recordSlotTime(SlotTime slotTime);
+
 
 }

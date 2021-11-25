@@ -12,6 +12,7 @@ public class Area {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
+    @JsonIgnore
     private Long id;
 
     @Column(name = "name")
