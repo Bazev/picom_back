@@ -18,7 +18,6 @@ public class Area {
     @Column(name = "name")
     private String name;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "area")
     private List<Arret> arrets;
 

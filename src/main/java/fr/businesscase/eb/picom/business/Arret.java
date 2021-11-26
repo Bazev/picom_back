@@ -10,7 +10,6 @@ import java.io.Serializable;
 public class Arret implements Serializable {
 
     @Id
-    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
@@ -22,22 +21,22 @@ public class Arret implements Serializable {
 
     @NotBlank(message = "Champ obligatoire")
     @Column(name = "nom")
-    private String nom;
+    private String name;
 
     public Arret() {
     }
 
-    public Arret(Area area, String nom) {
+    public Arret(Area area, String name) {
         this.area = area;
-        this.nom = nom;
+        this.name = name;
     }
 
-    public String getNom() {
-        return nom;
+    public String getName() {
+        return name;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Long getId() {
@@ -61,6 +60,6 @@ public class Arret implements Serializable {
         return getClass().getSimpleName() + "(" +
                 "id = " + id + ", " +
                 "area = " + area + ", " +
-                "nom = " + nom + ")";
+                "name = " + name + ")";
     }
 }
