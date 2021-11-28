@@ -44,7 +44,9 @@ public class InitController {
                 area.setName("Zone" + i);
                 areaService.recordArea(area);
                 for(int j = 1; j <=5; j++) {
-                    arretService.ajouterArret("Arret"+j, area.getId());
+                    Arret arret = new Arret();
+                    arret.setName("arret"+j);
+                arretService.ajouterArret(arret.getName(), area.getId());
                 }
             }
         }
@@ -69,7 +71,8 @@ public class InitController {
                 customer.setLastName("Doe"+i);
                 customer.setFirstName("John"+i);
                 customer.setEmail("JohnDoe"+i+"@domaine.fr");
-                customer.setPassword("password"+random.nextInt(500));
+                customer.setPassword("password+"+i*5);
+//                customer.setPassword("password"+random.nextInt(500));
                 usersService.recordCustomer(customer);
 
                 for (int j=1; j <= 4; j++) {
@@ -83,7 +86,7 @@ public class InitController {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                    annonceImage.setTitle("Titre"+j);
+                    annonceImage.setTitle("Annonce TITRE "+j);
                     List<SlotTime> slotTimeList = new ArrayList<>();
                     slotTimeList.add(slotTimeService.getSlotTime(10));
                     slotTimeList.add(slotTimeService.getSlotTime(11));
