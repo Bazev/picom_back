@@ -44,6 +44,12 @@ public class PiComRestController {
         return areaService.getAreas();
     }
 
+    //list of slotTimes
+    @GetMapping("ws/slots")
+    public List<SlotTime> slotsGet() {
+    return slotTimeService.getSlotTimes();
+    }
+
     // add zone
     @PostMapping("ws/zones/{nom}")
     public Area zonesPost(@PathVariable String nom) {
@@ -57,6 +63,7 @@ public class PiComRestController {
         return areaService.deleteArea(id);
     }
 
+    // login
     @CrossOrigin(origins = "*")
     @PostMapping("ws/login/{email}/{password}")
     public User getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
