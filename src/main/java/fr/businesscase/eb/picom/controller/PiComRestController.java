@@ -74,11 +74,11 @@ public class PiComRestController {
 
     //add advert Picture
     @PostMapping("ws/advertPicture/dateCreate/{dateCreate}/dateStart/{dateStart}/dateEnd/{dateEnd}/customer/{customerId}/area/{areaId}/houres/{houresId}")
-    public AdvertImage addAnnonce(@PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateCreate, @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateStart,
-                                  @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd, @PathVariable long customerId, @PathVariable long areaId,
+    public AdvertImage addAnnonce(@PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateStart,
+                                  @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd,
+                                  @PathVariable long customerId, @PathVariable long areaId,
                                   @PathVariable long houresId) {
         AdvertImage annonceImage = new AdvertImage();
-        annonceImage.setDateCreate(dateCreate);
         annonceImage.setDateStart(dateStart);
         annonceImage.setDateEnd(dateEnd);
         Customer customer = customerService.getCustomer(customerId);
@@ -93,12 +93,13 @@ public class PiComRestController {
     }
 
     //add advert Html
-    @PostMapping("ws/advertHtml/dateCreate/{dateCreate}/dateStart/{dateStart}/dateEnd/{dateEnd}/customer/{customerId}/area/{areaId}/houres/{houresId}/content/{content}")
-    public AdvertHtml addAvertHtml(@PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateCreate, @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateStart,
-                                   @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd, @PathVariable long customerId, @PathVariable long areaId,
+    @PostMapping("ws/advertHtml//dateStart/{dateStart}/dateEnd/{dateEnd}/customer/{customerId}/area/{areaId}/houres/" +
+            "{houresId}/content/{content}")
+    public AdvertHtml addAvertHtml(@PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateStart,
+                                   @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd,
+                                   @PathVariable long customerId, @PathVariable long areaId,
                                    @PathVariable long houresId, @PathVariable String content) {
         AdvertHtml annonceHtml = new AdvertHtml();
-        annonceHtml.setDateCreate(dateCreate);
         annonceHtml.setDateStart(dateStart);
         annonceHtml.setDateEnd(dateEnd);
         Customer customer = customerService.getCustomer(customerId);

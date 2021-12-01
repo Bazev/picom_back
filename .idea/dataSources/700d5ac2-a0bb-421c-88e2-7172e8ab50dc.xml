@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="postgres@localhost">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.23">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.31">
     <root id="1">
-      <ServerVersion>12.9</ServerVersion>
+      <DateStyle>dmy</DateStyle>
       <Grants>1||-9223372036854775808|c|G
 1||10|c|G
 1||10|C|G
@@ -11,7 +11,9 @@
 13470||10|c|G
 13470||10|C|G
 13470||10|T|G</Grants>
-      <DateStyle>dmy</DateStyle>
+      <IntrospectionStateNumber>9522</IntrospectionStateNumber>
+      <ServerVersion>12.9</ServerVersion>
+      <StartupTime>1638090916</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1416,16 +1418,14 @@ false posix/WET
 false posix/Zulu
 false posixrules
 </TimeZones>
-      <IntrospectionStateNumber>9522</IntrospectionStateNumber>
-      <StartupTime>1638090916</StartupTime>
     </root>
     <database id="2" parent="1" name="picom">
       <ObjectId>16385</ObjectId>
-      <Owner>bazev</Owner>
+      <OwnerName>bazev</OwnerName>
     </database>
     <database id="3" parent="1" name="postgres">
-      <ObjectId>13471</ObjectId>
       <Comment>default administrative connection database</Comment>
+      <Current>1</Current>
       <Grants>11||10|C|G
 11||-9223372036854775808|U|G
 11||10|U|G
@@ -1436,14 +1436,14 @@ false posixrules
 13171||10|C|G
 13171||-9223372036854775808|U|G
 13171||10|U|G</Grants>
-      <Owner>postgres</Owner>
       <IntrospectionStateNumber>9523</IntrospectionStateNumber>
-      <Current>1</Current>
+      <ObjectId>13471</ObjectId>
+      <OwnerName>postgres</OwnerName>
     </database>
     <role id="4" parent="1" name="bazev">
-      <ObjectId>16384</ObjectId>
-      <CreateDb>1</CreateDb>
       <CanLogin>1</CanLogin>
+      <CreateDb>1</CreateDb>
+      <ObjectId>16384</ObjectId>
     </role>
     <role id="5" parent="1" name="pg_execute_server_program">
       <ObjectId>4571</ObjectId>
@@ -1473,23 +1473,23 @@ false posixrules
       <ObjectId>4570</ObjectId>
     </role>
     <role id="13" parent="1" name="postgres">
-      <ObjectId>10</ObjectId>
+      <BypassRls>1</BypassRls>
+      <CanLogin>1</CanLogin>
       <CreateDb>1</CreateDb>
       <CreateRole>1</CreateRole>
-      <CanLogin>1</CanLogin>
-      <SuperRole>1</SuperRole>
+      <ObjectId>10</ObjectId>
       <Replication>1</Replication>
-      <BypassRls>1</BypassRls>
+      <SuperRole>1</SuperRole>
     </role>
     <tablespace id="14" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
-      <Owner>postgres</Owner>
       <StateNumber>1</StateNumber>
+      <OwnerName>postgres</OwnerName>
     </tablespace>
     <tablespace id="15" parent="1" name="pg_global">
       <ObjectId>1664</ObjectId>
-      <Owner>postgres</Owner>
       <StateNumber>1</StateNumber>
+      <OwnerName>postgres</OwnerName>
     </tablespace>
   </database-model>
 </dataSource>
