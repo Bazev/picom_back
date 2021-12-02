@@ -93,9 +93,10 @@ public class PiComRestController {
 //        return advertService.recordAdvertPicture(annonceImage);
 //    }
 
-    @PostMapping("advertPicure/{advertPicture")
+    @PostMapping("advertPicture/{advertPicture")
     public AdvertImage addAdvert(@RequestBody AdvertImage advertPicture) {
         AdvertImage advertImage = new AdvertImage();
+        System.out.println(advertPicture);
         return advertService.recordAdvertPicture(advertPicture);
     }
 
