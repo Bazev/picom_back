@@ -74,24 +74,24 @@ public class PiComRestController {
     }
 
     //add advert Picture
-    @PostMapping("advertPicture/dateCreate/{dateCreate}/dateStart/{dateStart}/dateEnd/{dateEnd}/customer/{customerId}/area/{areaId}/houres/{houresId}")
-    public AdvertImage addAnnonce(@PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateStart,
-                                  @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd,
-                                  @PathVariable long customerId, @PathVariable long areaId,
-                                  @PathVariable long houresId) {
-        AdvertImage annonceImage = new AdvertImage();
-        annonceImage.setDateStart(dateStart);
-        annonceImage.setDateEnd(dateEnd);
-        Customer customer = customerService.getCustomer(customerId);
-        annonceImage.setCustomer(customer);
-        List<Area> areasAnnonceHtml = new ArrayList<>();
-        areasAnnonceHtml.add(areaService.getArea(areaId));
-        annonceImage.setAreas(areasAnnonceHtml);
-        List<SlotTime> houresAnnonceHtml = new ArrayList<>();
-        houresAnnonceHtml.add(slotTimeService.getHoure(houresId));
-        annonceImage.setSlotTimes(houresAnnonceHtml);
-        return advertService.recordAdvertPicture(annonceImage);
-    }
+//    @PostMapping("advertPicture/dateCreate/{dateCreate}/dateStart/{dateStart}/dateEnd/{dateEnd}/customer/{customerId}/area/{areaId}/houres/{houresId}")
+//    public AdvertImage addAnnonce(@PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateStart,
+//                                  @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd,
+//                                  @PathVariable long customerId, @PathVariable long areaId,
+//                                  @PathVariable long houresId) {
+//        AdvertImage annonceImage = new AdvertImage();
+//        annonceImage.setDateStart(dateStart);
+//        annonceImage.setDateEnd(dateEnd);
+//        Customer customer = customerService.getCustomer(customerId);
+//        annonceImage.setCustomer(customer);
+//        List<Area> areasAnnonceHtml = new ArrayList<>();
+//        areasAnnonceHtml.add(areaService.getArea(areaId));
+//        annonceImage.setAreas(areasAnnonceHtml);
+//        List<SlotTime> houresAnnonceHtml = new ArrayList<>();
+//        houresAnnonceHtml.add(slotTimeService.getHoure(houresId));
+//        annonceImage.setSlotTimes(houresAnnonceHtml);
+//        return advertService.recordAdvertPicture(annonceImage);
+//    }
 
     @PostMapping("advertPicure/{advertPicture")
     public AdvertImage addAdvert(@RequestBody AdvertImage advertPicture) {
