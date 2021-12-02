@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 @RestController
+@RequestMapping("ws/")
 public class PiComRestController {
 
     private final UsersService usersService;
@@ -39,33 +40,33 @@ public class PiComRestController {
     }
 
     //list of area
-    @GetMapping("ws/zones")
+    @GetMapping("zones")
     public List<Area> zonesGet() {
         return areaService.getAreas();
     }
 
     //list of slotTimes
-    @GetMapping("ws/slots")
+    @GetMapping("slots")
     public List<SlotTime> slotsGet() {
     return slotTimeService.getSlotTimes();
     }
 
     // add zone
-    @PostMapping("ws/zones/{nom}")
+    @PostMapping("zones/{nom}")
     public Area zonesPost(@PathVariable String nom) {
         Area area = areaService.addArea(nom);
         return area;
     }
 
     // delete zone
-    @DeleteMapping("ws/zones/{id}")
+    @DeleteMapping("zones/{id}")
     public boolean zoneDelete(@PathVariable Long id) {
         return areaService.deleteArea(id);
     }
 
     // login
     @CrossOrigin(origins = "*")
-    @PostMapping("ws/login/{email}/{password}")
+    @PostMapping("login/{email}/{password}")
     public User getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
      User user = usersService.getUser(email, password);
         System.out.println("connexion de"+email);
@@ -73,7 +74,7 @@ public class PiComRestController {
     }
 
     //add advert Picture
-    @PostMapping("ws/advertPicture/dateCreate/{dateCreate}/dateStart/{dateStart}/dateEnd/{dateEnd}/customer/{customerId}/area/{areaId}/houres/{houresId}")
+    @PostMapping("advertPicture/dateCreate/{dateCreate}/dateStart/{dateStart}/dateEnd/{dateEnd}/customer/{customerId}/area/{areaId}/houres/{houresId}")
     public AdvertImage addAnnonce(@PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateStart,
                                   @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd,
                                   @PathVariable long customerId, @PathVariable long areaId,
@@ -92,8 +93,14 @@ public class PiComRestController {
         return advertService.recordAdvertPicture(annonceImage);
     }
 
+    @PostMapping("advertPicure/{advertPicture")
+    public AdvertImage addAdvert(@RequestBody AdvertImage advertPicture) {
+        AdvertImage advertImage = new AdvertImage();
+        return advertService.recordAdvertPicture(advertPicture);
+    }
+
     //add advert Html
-    @PostMapping("ws/advertHtml//dateStart/{dateStart}/dateEnd/{dateEnd}/customer/{customerId}/area/{areaId}/houres/" +
+    @PostMapping("advertHtml//dateStart/{dateStart}/dateEnd/{dateEnd}/customer/{customerId}/area/{areaId}/houres/" +
             "{houresId}/content/{content}")
     public AdvertHtml addAvertHtml(@PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateStart,
                                    @PathVariable @DateTimeFormat(pattern = "dd-MM-yyyy") Date dateEnd,
@@ -115,7 +122,7 @@ public class PiComRestController {
     }
 
     //add user
-    @PostMapping("ws/addCustomer/{lastname}/{firstname}/{email}/{password}/{numtel}")
+    @PostMapping("addCustomer/{lastname}/{firstname}/{email}/{password}/{numtel}")
     public Customer addCustomer(@PathVariable String lastname, @PathVariable String firstname,
                                 @PathVariable String email, @PathVariable String password) {
         Customer customer = new Customer();
@@ -127,7 +134,7 @@ public class PiComRestController {
     }
 
     // get adverts by customer
-    @GetMapping("ws/customer/{id}/adverts")
+    @GetMapping("customer/{id}/adverts")
     public List<Advert> getAdvertsByCustomer(@PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
         return advertService.getAdvertsByCustomer(customer);
@@ -135,10 +142,9 @@ public class PiComRestController {
     }
 
     //get advert by id
-    @GetMapping("ws/advert/{id}")
+    @GetMapping("advert/{id}")
     public Advert getAdvertById(@PathVariable Long id){
-        Advert advert = advertService.getAdvert(id);
-        return advert;
+        return advertService.getAdvert(id);
     }
 
 }
