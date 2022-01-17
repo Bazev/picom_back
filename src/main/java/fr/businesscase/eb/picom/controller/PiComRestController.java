@@ -64,7 +64,12 @@ public class PiComRestController {
         return areaService.deleteArea(id);
     }
 
-    // login
+    /**
+     *
+     * @param email
+     * @param password
+     * @return
+     */
     @CrossOrigin(origins = "*")
     @PostMapping("login/{email}/{password}")
     public User getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
@@ -93,8 +98,14 @@ public class PiComRestController {
 //        return advertService.recordAdvertPicture(annonceImage);
 //    }
 
+    /**
+     * Ajouter une annonce
+     * @param advertPicture
+     * @return
+     */
+    @CrossOrigin(origins = "*")
     @PostMapping("advertPicture/{advertPicture")
-    public AdvertImage addAdvert(@RequestBody AdvertImage advertPicture) {
+    public Advert addAdvert(@RequestBody AdvertImage advertPicture) {
         AdvertImage advertImage = new AdvertImage();
         System.out.println(advertPicture);
         return advertService.recordAdvertPicture(advertPicture);
