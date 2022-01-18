@@ -103,12 +103,11 @@ public class PiComRestController {
      * @param advertPicture
      * @return
      */
-    @CrossOrigin(origins = "*")
     @PostMapping("advertPicture/{advertPicture")
     public Advert addAdvert(@RequestBody AdvertImage advertPicture) {
-        AdvertImage advertImage = new AdvertImage();
-        System.out.println(advertPicture);
-        return advertService.recordAdvertPicture(advertPicture);
+        AdvertImage advertImage = advertService.recordAdvertPicture(advertPicture);
+        System.out.println(advertImage);
+        return advertImage;
     }
 
     //add advert Html
