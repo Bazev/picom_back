@@ -104,7 +104,7 @@ public class PiComRestController {
      * @return
      */
     @CrossOrigin(origins = "*")
-    @PostMapping("advertPicture/{advertPicture")
+    @PostMapping("advertPicture/{advertPicture}")
     public Advert addAdvert(@RequestBody AdvertImage advertPicture) {
         AdvertImage advertImage = advertService.recordAdvertPicture(advertPicture);
         System.out.println(advertImage);
@@ -145,7 +145,11 @@ public class PiComRestController {
         return usersService.recordCustomer(customer);
     }
 
-    // get adverts by customer
+    /**
+     * Récupérer les annonces d'un user
+     * @param id
+     * @return
+     */
     @GetMapping("customer/{id}/adverts")
     public List<Advert> getAdvertsByCustomer(@PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
@@ -153,7 +157,11 @@ public class PiComRestController {
 
     }
 
-    //get advert by id
+    /**
+     * Récupérer une annonce par son id
+     * @param id
+     * @return
+     */
     @GetMapping("advert/{id}")
     public Advert getAdvertById(@PathVariable Long id){
         return advertService.getAdvert(id);
