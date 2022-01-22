@@ -29,13 +29,8 @@ public class AdvertServiceImpl implements AdvertService {
     }
 
     @Override
-    public AdvertImage recordAdvertPicture(AdvertImage annonceImage) {
-        return advertRepository.save(annonceImage);
-    }
-
-    @Override
-    public AdvertHtml recordAdvertHtml(AdvertHtml annonceHtml) {
-        return advertRepository.save(annonceHtml);
+    public Advert recordAdvert(Advert advert) {
+        return advertRepository.save(advert);
     }
 
     @Override

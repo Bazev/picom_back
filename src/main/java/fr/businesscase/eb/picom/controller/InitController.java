@@ -21,7 +21,7 @@ public class InitController {
     private final ArretService arretService;
     private final AdvertService advertService;
     private final SlotTimeService slotTimeService;
-    private static Random random = new Random();
+    private static final Random random = new Random();
     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
     public InitController(UsersService usersService, AreaService areaService, ArretService arretService, AdvertService advertService, SlotTimeService slotTimeService) {
@@ -58,7 +58,7 @@ public class InitController {
             for (int i = 6; i <= 20; i++ ) {
                 SlotTime slotTime = new SlotTime();
                 slotTime.setStart(i);
-                slotTimeService.recordSlotTime(slotTime);;
+                slotTimeService.recordSlotTime(slotTime);
             }
         }
 
@@ -72,35 +72,33 @@ public class InitController {
                 customer.setFirstName("John"+i);
                 customer.setEmail("JohnDoe"+i+"@domaine.fr");
                 customer.setPassword("password+"+i*5);
-//                customer.setPassword("password"+random.nextInt(500));
                 usersService.recordCustomer(customer);
 
                 for (int j=1; j <= 4; j++) {
-                    AdvertImage annonceImage = new AdvertImage();
-                    annonceImage.setCustomer(customer);
+                    Advert advert = new Advert();
+                    advert.setCustomer(customer);
                     try {
                         Date dateDebut = format.parse("2021-10-01");
                         Date dateFin = format.parse("2021-11-21");
-                        annonceImage.setDateStart(dateDebut);
-                        annonceImage.setDateEnd(dateFin);
+                        advert.setDateStart(dateDebut);
+                        advert.setDateEnd(dateFin);
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                    annonceImage.setTitle("Annonce TITRE "+j);
+                    advert.setTitle("Annonce TITRE "+j);
                     List<SlotTime> slotTimeList = new ArrayList<>();
                     slotTimeList.add(slotTimeService.getSlotTime(10));
                     slotTimeList.add(slotTimeService.getSlotTime(11));
                     slotTimeList.add(slotTimeService.getSlotTime(12));
-                    annonceImage.setSlotTimes(slotTimeList);
+                    advert.setSlotTimes(slotTimeList);
                     List<Area> areaList = new ArrayList<>();
                     areaList.add(areaService.getArea("Zone1"));
                     areaList.add(areaService.getArea("Zone2"));
                     areaList.add(areaService.getArea("Zone3"));
-                    annonceImage.setAreas(areaList);
-                    advertService.recordAdvertPicture(annonceImage);
+                    advert.setAreas(areaList);
+                    advertService.recordAdvert(advert);
                 }
             }
         }
-
     }
 }

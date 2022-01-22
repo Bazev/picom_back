@@ -13,9 +13,7 @@ public interface AdvertService {
 
     List<Advert> getAdvertsByCustomer(Customer customer);
 
-    AdvertImage recordAdvertPicture(AdvertImage annonceImage);
-
-    AdvertHtml recordAdvertHtml(AdvertHtml annonceHtml);
+    Advert recordAdvert(Advert advert);
 
     Page<Advert> getAdverts(String filtre, Pageable pageable);
 

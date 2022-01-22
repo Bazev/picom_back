@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-public abstract class Advert  implements Serializable {
+public class Advert  implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,49 +43,40 @@ public abstract class Advert  implements Serializable {
     @ManyToMany
     private List<Area> areas;
 
-   @ManyToMany
-   private List<SlotTime> slotTimes;
+    @ManyToMany
+    private List<SlotTime> slotTimes;
 
     @Column(name = "title")
     private String title;
 
-    public Advert() {
-        dateCreate = new Date();
-    }
+    @Column(name = "contenu")
+    private String contenu;
 
-//    public Advert(Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title, Long id) {
-//        this.dateCreate = dateCreate;
-//        this.dateStart = dateStart;
-//        this.dateEnd = dateEnd;
-//        this.customer = customer;
-//        this.areas = areas;
-//        this.slotTimes = slotTimes;
-//        this.title = title;
-//        this.id =id;
-//    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
+    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title) {
+        this.id = id;
+        this.dateCreate = dateCreate;
+        this.dateStart = dateStart;
+        this.dateEnd = dateEnd;
+        this.customer = customer;
+        this.areas = areas;
+        this.slotTimes = slotTimes;
         this.title = title;
     }
 
-    public List<SlotTime> getSlotTimes() {
-        return slotTimes;
-    }
-
-    public void setSlotTimes(List<SlotTime> slotTimes) {
-        this.slotTimes = slotTimes;
-    }
-
-    public List<Area> getAreas() {
-        return areas;
-    }
-
-    public void setAreas(List<Area> areas) {
+    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title, String contenu) {
+        this.id = id;
+        this.dateCreate = dateCreate;
+        this.dateStart = dateStart;
+        this.dateEnd = dateEnd;
+        this.customer = customer;
         this.areas = areas;
+        this.slotTimes = slotTimes;
+        this.title = title;
+        this.contenu = contenu;
+    }
+
+    public Advert() {
+
     }
 
     public Long getId() {
@@ -96,20 +87,12 @@ public abstract class Advert  implements Serializable {
         this.id = id;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Date getDateCreate() {
+        return dateCreate;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
-
-    public Date getDateEnd() {
-        return dateEnd;
-    }
-
-    public void setDateEnd(Date dateEnd) {
-        this.dateEnd = dateEnd;
+    public void setDateCreate(Date dateCreate) {
+        this.dateCreate = dateCreate;
     }
 
     public Date getDateStart() {
@@ -120,22 +103,51 @@ public abstract class Advert  implements Serializable {
         this.dateStart = dateStart;
     }
 
-    public Date getDateCreate() {
-        return dateCreate;
+    public Date getDateEnd() {
+        return dateEnd;
     }
 
-    public void setDateCreate(Date dateCreate) {
-        this.dateCreate = dateCreate;
+    public void setDateEnd(Date dateEnd) {
+        this.dateEnd = dateEnd;
     }
 
-    @Override
-    public String toString() {
-        return getClass().getSimpleName() + "(" +
-                "id = " + id + ", " +
-                "dateCreate = " + dateCreate + ", " +
-                "dateStart = " + dateStart + ", " +
-                "dateEnd = " + dateEnd + ", " +
-                "customer = " + customer + ", " +
-                "title = " + title + ")";
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public List<Area> getAreas() {
+        return areas;
+    }
+
+    public void setAreas(List<Area> areas) {
+        this.areas = areas;
+    }
+
+    public List<SlotTime> getSlotTimes() {
+        return slotTimes;
+    }
+
+    public void setSlotTimes(List<SlotTime> slotTimes) {
+        this.slotTimes = slotTimes;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContenu() {
+        return contenu;
+    }
+
+    public void setContenu(String contenu) {
+        this.contenu = contenu;
     }
 }
