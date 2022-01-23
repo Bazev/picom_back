@@ -83,6 +83,7 @@ public class PiComRestController {
      * @param advert
      * @return
      */
+    @CrossOrigin(origins = "*")
     @PostMapping("advert/{advert}/{id}")
     public Advert addAdvert(@RequestBody Advert advert, @PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
