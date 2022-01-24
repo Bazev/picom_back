@@ -56,31 +56,7 @@ public class Advert  implements Serializable {
     @Column(name = "contenu")
     private String contenu;
 
-    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title) {
-        this.id = id;
-        this.dateCreate = dateCreate;
-        this.dateStart = dateStart;
-        this.dateEnd = dateEnd;
-        this.customer = customer;
-        this.areas = areas;
-        this.slotTimes = slotTimes;
-        this.title = title;
-    }
-
-    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title, String contenu) {
-        this.id = id;
-        this.dateCreate = dateCreate;
-        this.dateStart = dateStart;
-        this.dateEnd = dateEnd;
-        this.customer = customer;
-        this.areas = areas;
-        this.slotTimes = slotTimes;
-        this.title = title;
-        this.contenu = contenu;
-    }
-
     public Advert() {
-
     }
 
     public Long getId() {
