@@ -22,7 +22,7 @@ public class InitController {
     private final AdvertService advertService;
     private final SlotTimeService slotTimeService;
     private static final Random random = new Random();
-    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+    SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 
     public InitController(UsersService usersService, AreaService areaService, ArretService arretService, AdvertService advertService, SlotTimeService slotTimeService) {
         this.usersService = usersService;
@@ -78,8 +78,8 @@ public class InitController {
                     Advert advert = new Advert();
                     advert.setCustomer(customer);
                     try {
-                        Date dateDebut = format.parse("2021-10-01");
-                        Date dateFin = format.parse("2021-11-21");
+                        Date dateDebut = format.parse("01-10-2021");
+                        Date dateFin = format.parse("21-11-2021");
                         advert.setDateStart(dateDebut);
                         advert.setDateEnd(dateFin);
                     } catch (ParseException e) {

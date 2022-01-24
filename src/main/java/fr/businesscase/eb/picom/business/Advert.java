@@ -50,6 +50,7 @@ public class Advert  implements Serializable {
     private List<SlotTime> slotTimes;
 
     @Column(name = "title")
+    @NotNull(message = "Titre requis")
     private String title;
 
     @Column(name = "contenu")
