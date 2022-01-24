@@ -7,6 +7,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -43,7 +44,7 @@ public class Advert  implements Serializable {
 
     @ManyToMany
     @NotNull(message = "Une zone minimum doit être sélectionnée")
-    private List<Area> areas;
+    private ArrayList<Area> areas;
 
     @ManyToMany
     @NotNull(message = "Créneaux horaires requis")
@@ -55,7 +56,7 @@ public class Advert  implements Serializable {
     @Column(name = "contenu")
     private String contenu;
 
-    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title) {
+    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, ArrayList<Area> areas, List<SlotTime> slotTimes, String title) {
         this.id = id;
         this.dateCreate = dateCreate;
         this.dateStart = dateStart;
@@ -66,7 +67,7 @@ public class Advert  implements Serializable {
         this.title = title;
     }
 
-    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title, String contenu) {
+    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, ArrayList<Area> areas, List<SlotTime> slotTimes, String title, String contenu) {
         this.id = id;
         this.dateCreate = dateCreate;
         this.dateStart = dateStart;
@@ -122,11 +123,11 @@ public class Advert  implements Serializable {
         this.customer = customer;
     }
 
-    public List<Area> getAreas() {
+    public ArrayList<Area> getAreas() {
         return areas;
     }
 
-    public void setAreas(List<Area> areas) {
+    public void setAreas(ArrayList<Area> areas) {
         this.areas = areas;
     }
 

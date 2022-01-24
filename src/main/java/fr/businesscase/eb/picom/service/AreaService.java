@@ -2,6 +2,7 @@ package fr.businesscase.eb.picom.service;
 
 import fr.businesscase.eb.picom.business.Area;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface AreaService {
@@ -10,6 +11,6 @@ public interface AreaService {
     Area getArea(Long id);
     Area getArea(String nom);
     Area recordArea(Area area);
-    List<Area> getAreas();
+    ArrayList<Area> getAreas();
     boolean deleteArea(Long id);
 }

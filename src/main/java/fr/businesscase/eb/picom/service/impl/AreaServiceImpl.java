@@ -5,6 +5,7 @@ import fr.businesscase.eb.picom.business.Area;
 import fr.businesscase.eb.picom.service.AreaService;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -36,8 +37,8 @@ public class AreaServiceImpl implements AreaService {
     }
 
     @Override
-    public List<Area> getAreas() {
-        return zoneRepository.findAll();
+    public ArrayList<Area> getAreas() {
+        return (ArrayList<Area>) zoneRepository.findAll();
     }
 
     @Override

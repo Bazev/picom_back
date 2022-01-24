@@ -41,13 +41,13 @@ public class PiComRestController {
 
     //list of area
     @GetMapping("zones")
-    public List<Area> zonesGet() {
+    public ArrayList<Area> zonesGet() {
         return areaService.getAreas();
     }
 
     //list of slotTimes
     @GetMapping("slots")
-    public List<SlotTime> slotsGet() {
+    public ArrayList<SlotTime> slotsGet() {
     return slotTimeService.getSlotTimes();
     }
 
