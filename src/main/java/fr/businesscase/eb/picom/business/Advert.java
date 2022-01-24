@@ -23,34 +23,28 @@ public class Advert  implements Serializable {
     @DateTimeFormat(pattern = "yyyy-mm-jj")
     private Date dateCreate;
 
-    @NotNull(message = "Date de début de diffusion requis")
     @Temporal(TemporalType.DATE)
     @Column(name = "date_start")
     @DateTimeFormat(pattern = "jj-mm-yyyy")
     private Date dateStart;
 
-    @NotNull(message = "Date de fin de diffusion requis")
     @Temporal(TemporalType.DATE)
     @Column(name = "date_end")
     @DateTimeFormat(pattern = "jj-mm-yyyy")
     private Date dateEnd;
 
     @JsonIgnore
-    @NotNull(message = "Client requis")
     @ManyToOne
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
     @ManyToMany
-    @NotNull(message = "Une zone minimum doit être sélectionnée")
     private List<Area> areas;
 
     @ManyToMany
-    @NotNull(message = "Créneaux horaires requis")
     private List<SlotTime> slotTimes;
 
     @Column(name = "title")
-    @NotNull(message = "Titre requis")
     private String title;
 
     @Column(name = "contenu")
