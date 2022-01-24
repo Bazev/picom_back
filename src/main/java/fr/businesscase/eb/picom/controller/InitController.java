@@ -86,12 +86,12 @@ public class InitController {
                         e.printStackTrace();
                     }
                     advert.setTitle("Annonce TITRE "+j);
-                    List<SlotTime> slotTimeList = new ArrayList<>();
+                    ArrayList<SlotTime> slotTimeList = new ArrayList<>();
                     slotTimeList.add(slotTimeService.getSlotTime(10));
                     slotTimeList.add(slotTimeService.getSlotTime(11));
                     slotTimeList.add(slotTimeService.getSlotTime(12));
                     advert.setSlotTimes(slotTimeList);
-                    List<Area> areaList = new ArrayList<>();
+                    ArrayList<Area> areaList = new ArrayList<>();
                     areaList.add(areaService.getArea("Zone1"));
                     areaList.add(areaService.getArea("Zone2"));
                     areaList.add(areaService.getArea("Zone3"));
