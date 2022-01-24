@@ -7,7 +7,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -22,7 +21,7 @@ public class Advert  implements Serializable {
     @Temporal(TemporalType.DATE)
     @Column(name = "date_create")
     @DateTimeFormat(pattern = "yyyy-mm-jj")
-    private LocalDate dateCreate;
+    private Date dateCreate;
 
     @NotNull(message = "Date de début de diffusion requis")
     @Temporal(TemporalType.DATE)
@@ -51,13 +50,12 @@ public class Advert  implements Serializable {
     private List<SlotTime> slotTimes;
 
     @Column(name = "title")
-    @NotNull(message = "Titre requis")
     private String title;
 
     @Column(name = "contenu")
     private String contenu;
 
-    public Advert(Long id, LocalDate dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title) {
+    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title) {
         this.id = id;
         this.dateCreate = dateCreate;
         this.dateStart = dateStart;
@@ -68,7 +66,7 @@ public class Advert  implements Serializable {
         this.title = title;
     }
 
-    public Advert(Long id, LocalDate dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title, String contenu) {
+    public Advert(Long id, Date dateCreate, Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title, String contenu) {
         this.id = id;
         this.dateCreate = dateCreate;
         this.dateStart = dateStart;
@@ -92,11 +90,11 @@ public class Advert  implements Serializable {
         this.id = id;
     }
 
-    public LocalDate getDateCreate() {
+    public Date getDateCreate() {
         return dateCreate;
     }
 
-    public void setDateCreate(LocalDate dateCreate) {
+    public void setDateCreate(Date dateCreate) {
         this.dateCreate = dateCreate;
     }
 

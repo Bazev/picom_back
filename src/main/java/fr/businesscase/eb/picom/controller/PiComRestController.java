@@ -88,7 +88,7 @@ public class PiComRestController {
     @PostMapping(value = "advert/{id}", consumes = {"*/*"})
     public Advert addAdvert(@RequestBody Advert advert, @PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
-        advert.setDateCreate(LocalDate.now());
+        advert.setDateCreate(new Date(String.valueOf(LocalDate.now())));
         advert.setCustomer(customer);
         return advertService.recordAdvert(advert);
     }
