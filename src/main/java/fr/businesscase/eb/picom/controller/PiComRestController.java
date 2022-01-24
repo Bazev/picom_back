@@ -2,14 +2,9 @@ package fr.businesscase.eb.picom.controller;
 
 import fr.businesscase.eb.picom.business.*;
 import fr.businesscase.eb.picom.service.*;
-import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -51,7 +46,7 @@ public class PiComRestController {
     //list of slotTimes
     @GetMapping("slots")
     public List<SlotTime> slotsGet() {
-    return slotTimeService.getSlotTimes();
+        return slotTimeService.getSlotTimes();
     }
 
     // add zone
@@ -67,7 +62,6 @@ public class PiComRestController {
     }
 
     /**
-     *
      * @param email
      * @param password
      * @return
@@ -75,23 +69,25 @@ public class PiComRestController {
     @CrossOrigin(origins = "*")
     @PostMapping("login/{email}/{password}")
     public User getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
-     User user = usersService.getUser(email, password);
-        System.out.println("connexion de"+email);
+        User user = usersService.getUser(email, password);
+        System.out.println("connexion de" + email);
         return user;
     }
 
 
     /**
      * Ajouter une annonce
+     *
      * @param advert
      * @return
      */
     @CrossOrigin(origins = "*")
-    @PostMapping(value = "advert/{id}", consumes = {"*/*"})
+    @PostMapping(value = "advert/{id}", consumes = {"*/*"}, produces = MediaType.APPLICATION_JSON_VALUE)
     public Advert addAdvert(@RequestBody Advert advert, @PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
         advert.setCustomer(customer);
-        return advertService.recordAdvert(advert);
+        advertService.recordAdvert(advert);
+        return advert;
     }
 
     //add user
@@ -109,6 +105,7 @@ public class PiComRestController {
 
     /**
      * Récupérer les annonces d'un user
+     *
      * @param id
      * @return
      */
@@ -122,11 +119,12 @@ public class PiComRestController {
 
     /**
      * Récupérer une annonce par son id
+     *
      * @param id
      * @return
      */
     @GetMapping("advert/{id}")
-    public Advert getAdvertById(@PathVariable Long id){
+    public Advert getAdvertById(@PathVariable Long id) {
         return advertService.getAdvert(id);
     }
 
