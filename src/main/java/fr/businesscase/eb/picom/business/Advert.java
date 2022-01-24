@@ -124,4 +124,17 @@ public class Advert  implements Serializable {
     public void setContenu(String contenu) {
         this.contenu = contenu;
     }
+
+    @Override
+    public String toString() {
+        return "Advert{" +
+                "id=" + id +
+                ", dateCreate=" + dateCreate +
+                ", dateStart=" + dateStart +
+                ", dateEnd=" + dateEnd +
+                ", customer=" + customer +
+                ", title='" + title + '\'' +
+                ", contenu='" + contenu + '\'' +
+                '}';
+    }
 }
