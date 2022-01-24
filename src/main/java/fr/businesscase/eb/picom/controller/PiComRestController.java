@@ -5,8 +5,10 @@ import fr.businesscase.eb.picom.service.*;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -88,7 +90,8 @@ public class PiComRestController {
     @PostMapping(value = "advert/{id}", consumes = {"*/*"})
     public Advert addAdvert(@RequestBody Advert advert, @PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
-        advert.setDateCreate(new Date(String.valueOf(LocalDate.now())));
+
+        advert.setDateCreate(new Date());
         advert.setCustomer(customer);
         return advertService.recordAdvert(advert);
     }
