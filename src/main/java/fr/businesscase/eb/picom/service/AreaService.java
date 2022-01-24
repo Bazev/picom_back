@@ -11,6 +11,6 @@ public interface AreaService {
     Area getArea(Long id);
     Area getArea(String nom);
     Area recordArea(Area area);
-    ArrayList<Area> getAreas();
+    List<Area> getAreas();
     boolean deleteArea(Long id);
 }

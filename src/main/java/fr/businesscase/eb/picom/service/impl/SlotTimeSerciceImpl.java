@@ -5,7 +5,6 @@ import fr.businesscase.eb.picom.business.SlotTime;
 import fr.businesscase.eb.picom.service.SlotTimeService;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -23,8 +22,8 @@ public class SlotTimeSerciceImpl implements SlotTimeService {
     }
 
     @Override
-    public ArrayList<SlotTime> getSlotTimes() {
-        return (ArrayList<SlotTime>) slotTimeRepository.findAll();
+    public List<SlotTime> getSlotTimes() {
+        return slotTimeRepository.findAll();
     }
 
     @Override

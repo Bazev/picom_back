@@ -9,7 +9,7 @@ public interface SlotTimeService {
 
     SlotTime addSlotTime(int debut);
 
-    ArrayList<SlotTime> getSlotTimes();
+    List<SlotTime> getSlotTimes();
 
     SlotTime getSlotTime(int debut);
 
