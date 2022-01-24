@@ -84,7 +84,7 @@ public class PiComRestController {
      * @return
      */
     @CrossOrigin(origins = "*")
-    @PostMapping("advert/{advert}/{id}")
+    @PostMapping("advert/{id}")
     public Advert addAdvert(@RequestBody Advert advert, @PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
         advert.setCustomer(customer);
@@ -94,12 +94,13 @@ public class PiComRestController {
     //add user
     @PostMapping("addCustomer/{lastname}/{firstname}/{email}/{password}/{numtel}")
     public Customer addCustomer(@PathVariable String lastname, @PathVariable String firstname,
-                                @PathVariable String email, @PathVariable String password) {
+                                @PathVariable String email, @PathVariable String password, @PathVariable String numtel) {
         Customer customer = new Customer();
         customer.setLastName(lastname);
         customer.setFirstName(firstname);
         customer.setEmail(email);
         customer.setPassword(password);
+        customer.setNumeroTel(numtel);
         return usersService.recordCustomer(customer);
     }
 
