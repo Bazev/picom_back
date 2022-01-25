@@ -26,11 +26,13 @@ public class Advert  implements Serializable {
     @Temporal(TemporalType.DATE)
     @Column(name = "date_start")
     @DateTimeFormat(pattern = "jj-mm-yyyy")
+    @NotNull(message = "Date de début requis")
     private Date dateStart;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "date_end")
     @DateTimeFormat(pattern = "jj-mm-yyyy")
+    @NotNull(message = "Date de fin requis")
     private Date dateEnd;
 
     @JsonIgnore
@@ -39,12 +41,15 @@ public class Advert  implements Serializable {
     private Customer customer;
 
     @ManyToMany
+    @NotNull(message = "Zone requis")
     private List<Area> areas;
 
     @ManyToMany
+    @NotNull(message = "Créneaux requis")
     private List<SlotTime> slotTimes;
 
     @Column(name = "title")
+    @NotNull(message = "Titre requis")
     private String title;
 
     @Column(name = "contenu")
