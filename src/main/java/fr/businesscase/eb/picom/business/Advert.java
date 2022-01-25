@@ -40,11 +40,11 @@ public class Advert  implements Serializable {
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @NotNull(message = "Zone requis")
     private List<Area> areas;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @NotNull(message = "Créneaux requis")
     private List<SlotTime> slotTimes;
 
@@ -66,6 +66,8 @@ public class Advert  implements Serializable {
         this.slotTimes = slotTimes;
         this.title = title;
     }
+
+
 
     public Long getId() {
         return id;
