@@ -3,13 +3,13 @@ package fr.businesscase.eb.picom.business;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+@Table(name = "advert")
 @Entity
 public class Advert  implements Serializable {
 
@@ -40,13 +40,13 @@ public class Advert  implements Serializable {
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @NotNull(message = "Zone requis")
-    private List<Area> areas;
-
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = {CascadeType.MERGE})
     @NotNull(message = "Créneaux requis")
     private List<SlotTime> slotTimes;
+
+    @ManyToMany(cascade = {CascadeType.MERGE})
+    @NotNull(message = "Zone requis")
+    private List<Area> areas;
 
     @Column(name = "title")
     @NotNull(message = "Titre requis")

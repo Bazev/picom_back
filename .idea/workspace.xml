@@ -4,26 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="c39880ab-95c2-4445-9ed9-8510c2924e0c" name="Changes" comment="" />
-=======
-    <list default="true" id="c39880ab-95c2-4445-9ed9-8510c2924e0c" name="Changes" comment="">
+    <list default="true" id="c39880ab-95c2-4445-9ed9-8510c2924e0c" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fr/businesscase/eb/picom/service/impl/AdvertServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52582825-1a93-4973-bce3-d3423f9082ae.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52582825-1a93-4973-bce3-d3423f9082ae/storage_v2/_src_/database/picom.6IRbBg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52582825-1a93-4973-bce3-d3423f9082ae/storage_v2/_src_/database/picom.6IRbBg/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52582825-1a93-4973-bce3-d3423f9082ae/storage_v2/_src_/database/picom.6IRbBg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52582825-1a93-4973-bce3-d3423f9082ae/storage_v2/_src_/database/picom.6IRbBg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f5d844fa-e716-47e2-a3c6-9b86f121ede8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f5d844fa-e716-47e2-a3c6-9b86f121ede8/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f5d844fa-e716-47e2-a3c6-9b86f121ede8/storage_v2/_src_/schema/scoubadoo.L4bfgw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/InitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/InitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/SlotTimeSerciceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/SlotTimeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/UsersSerciceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Advert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Advert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/AdvertHtml.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/AdvertImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Area.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/InitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/InitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/PiComRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/PiComRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/AdvertService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/AdvertService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/AdvertServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/AdvertServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/SlotTimeSerciceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/UsersSerciceImpl.class" beforeDir="false" />
     </list>
->>>>>>> f170ddeb7f1b8250a87412ed43a087df568603da
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,11 +97,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowAnt.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../picom/picom_back" />
-=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
->>>>>>> ad995d8c335148b1a31bfdc42ce154250a63733a
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -104,7 +108,31 @@
     <property name="project.structure.side.proportion" value="0.43793103" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="fr.businesscase.eb.picom.service.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PicomApplication">
+    <configuration name="AdvertServiceImplTest.recordAdvert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="picom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.businesscase.eb.picom.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.businesscase.eb.picom.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="fr.businesscase.eb.picom.service.impl.AdvertServiceImplTest" />
+      <option name="METHOD_NAME" value="recordAdvert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PicomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="picom" />
       <extension name="coverage">
@@ -121,6 +149,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PicomApplication" />
+        <item itemvalue="JUnit.AdvertServiceImplTest.recordAdvert" />
       </list>
     </recent_temporary>
   </component>
@@ -157,24 +186,10 @@
       <workItem from="1637759969537" duration="7015000" />
       <workItem from="1637774644353" duration="3658000" />
       <workItem from="1637832961371" duration="18990000" />
-<<<<<<< HEAD
-      <workItem from="1637862381346" duration="1409000" />
-      <workItem from="1638009218365" duration="11000" />
-=======
       <workItem from="1637862381346" duration="4186000" />
       <workItem from="1637867527865" duration="272000" />
       <workItem from="1637912413970" duration="5433000" />
-<<<<<<< HEAD
-      <workItem from="1637934845547" duration="6283000" />
-      <workItem from="1638008622100" duration="939000" />
-      <workItem from="1638011158085" duration="273000" />
-      <workItem from="1638011521299" duration="1809000" />
-      <workItem from="1638014554697" duration="661000" />
-      <workItem from="1638016459461" duration="1472000" />
-=======
       <workItem from="1637934845547" duration="5477000" />
->>>>>>> f170ddeb7f1b8250a87412ed43a087df568603da
->>>>>>> ad995d8c335148b1a31bfdc42ce154250a63733a
     </task>
     <servers />
   </component>
@@ -290,6 +305,21 @@
     <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-el" />
     <option featureType="dependencySupport" implementationName="java:com.sun.activation:jakarta.activation" />
     <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-api" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

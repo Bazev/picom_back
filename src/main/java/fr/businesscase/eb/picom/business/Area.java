@@ -1,11 +1,12 @@
 package fr.businesscase.eb.picom.business;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.List;
 
-@Table(name = "Area")
+@Table(name = "area")
 @Entity
 public class Area {
 
@@ -17,11 +18,11 @@ public class Area {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "area")
+    @OneToMany(cascade = CascadeType.MERGE, orphanRemoval = true)
     private List<Arret> arrets;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "areas")
+    @ManyToMany(cascade = {CascadeType.MERGE})
     private List<Advert> adverts;
 
     public Area() {
