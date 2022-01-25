@@ -20,7 +20,7 @@ public class SlotTime implements Serializable {
     private int start;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "slotTimes",  cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @ManyToMany(mappedBy = "slotTimes")
     private List<Advert> adverts;
 
     public SlotTime() {

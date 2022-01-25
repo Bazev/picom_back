@@ -5,8 +5,11 @@ import fr.businesscase.eb.picom.business.Area;
 import fr.businesscase.eb.picom.business.Customer;
 import fr.businesscase.eb.picom.business.SlotTime;
 import fr.businesscase.eb.picom.service.UsersService;
+import org.apache.catalina.Session;
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.UsesSunMisc;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
