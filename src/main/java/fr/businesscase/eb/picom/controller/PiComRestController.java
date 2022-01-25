@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("ws/")
+@RequestMapping(value = "ws/", produces = MediaType.APPLICATION_JSON_VALUE, consumes = {"*/*"})
+@CrossOrigin(origins = "*")
 public class PiComRestController {
 
     private final UsersService usersService;
@@ -66,7 +67,7 @@ public class PiComRestController {
      * @param password
      * @return
      */
-    @CrossOrigin(origins = "*")
+
     @PostMapping("login/{email}/{password}")
     public User getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
         User user = usersService.getUser(email, password);
@@ -81,8 +82,7 @@ public class PiComRestController {
      * @param advert
      * @return
      */
-    @CrossOrigin(origins = "*")
-    @PostMapping(value = "advert/{id}", consumes = {"*/*"}, produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping( "advert/{id}")
     public Advert addAdvert(@RequestBody Advert advert, @PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
         advert.setCustomer(customer);
@@ -109,7 +109,6 @@ public class PiComRestController {
      * @param id
      * @return
      */
-    @CrossOrigin(origins = "*")
     @GetMapping("customer/{id}/adverts")
     public List<Advert> getAdvertsByCustomer(@PathVariable Long id) {
         Customer customer = customerService.getCustomer(id);
