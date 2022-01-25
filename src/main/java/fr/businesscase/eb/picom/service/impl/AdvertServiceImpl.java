@@ -58,4 +58,10 @@ public class AdvertServiceImpl implements AdvertService {
         return advertRepository.findById(id).orElse(null);
     }
 
+    @Override
+    public Advert modifierContenuAnnonce(Advert advert, String contenu) {
+        advert.setContenu(contenu);
+        return advertRepository.save(advert);
+    }
+
 }

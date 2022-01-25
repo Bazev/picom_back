@@ -127,4 +127,16 @@ public class PiComRestController {
         return advertService.getAdvert(id);
     }
 
+    /**
+     * Modifie le contenu d'une annonce
+     * @param id
+     * @param contenu
+     * @return
+     */
+    @PutMapping("advert/{id}/{contenu}")
+    Advert modifierAnnonce(@PathVariable Long id, @PathVariable String contenu) {
+        Advert advert = advertService.getAdvert(id);
+        return advertService.modifierContenuAnnonce(advert, contenu);
+    }
+
 }

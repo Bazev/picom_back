@@ -24,4 +24,6 @@ public interface AdvertService {
     Page<Advert> getAdverts(Pageable pageable);
 
     Advert getAdvert(Long id);
+
+    Advert modifierContenuAnnonce(Advert advert, String contenu);
 }
