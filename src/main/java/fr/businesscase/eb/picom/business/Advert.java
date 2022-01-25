@@ -58,6 +58,15 @@ public class Advert  implements Serializable {
     public Advert() {
     }
 
+    public Advert(Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title) {
+        this.dateStart = dateStart;
+        this.dateEnd = dateEnd;
+        this.customer = customer;
+        this.areas = areas;
+        this.slotTimes = slotTimes;
+        this.title = title;
+    }
+
     public Long getId() {
         return id;
     }
