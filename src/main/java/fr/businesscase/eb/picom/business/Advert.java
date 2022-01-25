@@ -46,7 +46,7 @@ public class Advert  implements Serializable {
     @NotNull(message = "Créneaux requis")
     private List<SlotTime> slotTimes;
 
-    @ManyToMany(cascade = {CascadeType.DETACH})
+    @ManyToMany
     @NotNull(message = "Zone requis")
     private List<Area> areas;
 

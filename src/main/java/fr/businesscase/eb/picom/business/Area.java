@@ -18,11 +18,11 @@ public class Area {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(cascade = CascadeType.MERGE, orphanRemoval = true)
+    @OneToMany
     private List<Arret> arrets;
 
     @JsonIgnore
-    @ManyToMany(cascade = {CascadeType.MERGE})
+    @ManyToMany
     private List<Advert> adverts;
 
     public Area() {
