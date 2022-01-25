@@ -41,7 +41,7 @@ public class Advert  implements Serializable {
     @JoinColumn(name = "customer_id")
     private Customer customer;
 
-    @ManyToMany(cascade = {CascadeType.MERGE})
+    @ManyToMany
     @Cascade({org.hibernate.annotations.CascadeType.SAVE_UPDATE, org.hibernate.annotations.CascadeType.MERGE, org.hibernate.annotations.CascadeType.PERSIST})
     @NotNull(message = "Créneaux requis")
     private List<SlotTime> slotTimes;
