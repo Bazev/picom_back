@@ -40,7 +40,6 @@ class AdvertServiceImplTest {
         customer.setFirstName("John");
         customer.setEmail("JohnDoe@domaine.fr");
         customer.setPassword("password+");
-        userService.recordCustomer(customer);
         Advert advert = new Advert();
         advert.setCustomer(customer);
         advert.setCustomer(customer);

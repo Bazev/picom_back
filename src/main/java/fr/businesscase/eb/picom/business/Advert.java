@@ -2,6 +2,7 @@ package fr.businesscase.eb.picom.business;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Cascade;
 import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -41,10 +42,11 @@ public class Advert  implements Serializable {
     private Customer customer;
 
     @ManyToMany(cascade = {CascadeType.MERGE})
+    @Cascade({org.hibernate.annotations.CascadeType.SAVE_UPDATE, org.hibernate.annotations.CascadeType.MERGE, org.hibernate.annotations.CascadeType.PERSIST})
     @NotNull(message = "Créneaux requis")
     private List<SlotTime> slotTimes;
 
-    @ManyToMany(cascade = {CascadeType.MERGE})
+    @ManyToMany(cascade = {CascadeType.DETACH})
     @NotNull(message = "Zone requis")
     private List<Area> areas;
 

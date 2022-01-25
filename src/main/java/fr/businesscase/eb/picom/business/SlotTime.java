@@ -1,6 +1,7 @@
 package fr.businesscase.eb.picom.business;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -20,6 +21,7 @@ public class SlotTime implements Serializable {
     private int start;
 
     @JsonIgnore
+    @Cascade({org.hibernate.annotations.CascadeType.SAVE_UPDATE, org.hibernate.annotations.CascadeType.MERGE, org.hibernate.annotations.CascadeType.PERSIST})
     @ManyToMany(mappedBy = "slotTimes")
     private List<Advert> adverts;
 
