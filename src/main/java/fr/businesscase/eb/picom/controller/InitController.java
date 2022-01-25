@@ -75,28 +75,15 @@ public class InitController {
                 usersService.recordCustomer(customer);
 
                 for (int j=1; j <= 4; j++) {
-                    Advert advert = new Advert();
-                    advert.setCustomer(customer);
-                    try {
-                        Date dateDebut = format.parse("01-10-2021");
-                        Date dateFin = format.parse("21-11-2021");
-                        advert.setDateStart(dateDebut);
-                        advert.setDateEnd(dateFin);
-                    } catch (ParseException e) {
-                        e.printStackTrace();
-                    }
-                    advert.setTitle("Annonce TITRE "+j);
+
                     List<SlotTime> slotTimeList = new ArrayList<>();
                     slotTimeList.add(slotTimeService.getSlotTime(10));
                     slotTimeList.add(slotTimeService.getSlotTime(11));
                     slotTimeList.add(slotTimeService.getSlotTime(12));
-                    advert.setSlotTimes(slotTimeList);
                     List<Area> areaList = new ArrayList<>();
                     areaList.add(areaService.getArea("Zone1"));
                     areaList.add(areaService.getArea("Zone2"));
                     areaList.add(areaService.getArea("Zone3"));
-                    advert.setAreas(areaList);
-                    advertService.recordAdvert(advert);
                 }
             }
         }
