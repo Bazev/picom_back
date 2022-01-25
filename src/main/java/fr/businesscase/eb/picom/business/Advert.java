@@ -47,6 +47,7 @@ public class Advert  implements Serializable {
     private List<SlotTime> slotTimes;
 
     @ManyToMany
+    @Cascade({org.hibernate.annotations.CascadeType.SAVE_UPDATE, org.hibernate.annotations.CascadeType.MERGE, org.hibernate.annotations.CascadeType.PERSIST})
     @NotNull(message = "Zone requis")
     private List<Area> areas;
 

@@ -23,6 +23,7 @@ public class Area {
 
     @JsonIgnore
     @ManyToMany
+    @Cascade({org.hibernate.annotations.CascadeType.SAVE_UPDATE, org.hibernate.annotations.CascadeType.MERGE, org.hibernate.annotations.CascadeType.PERSIST})
     private List<Advert> adverts;
 
     public Area() {
