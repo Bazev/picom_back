@@ -38,25 +38,39 @@ public class PiComRestController {
         return usersService.recordAdministrator(administrator);
     }
 
-    //list of area
+    /**
+     *
+     * @return
+     */
     @GetMapping("zones")
     public List<Area> zonesGet() {
         return areaService.getAreas();
     }
 
-    //list of slotTimes
+    /**
+     *
+     * @return
+     */
     @GetMapping("slots")
     public List<SlotTime> slotsGet() {
         return slotTimeService.getSlotTimes();
     }
 
-    // add zone
+    /**
+     *
+     * @param nom
+     * @return
+     */
     @PostMapping("zones/{nom}")
     public Area zonesPost(@PathVariable String nom) {
         return areaService.addArea(nom);
     }
 
-    // delete zone
+    /**
+     *
+     * @param id
+     * @return
+     */
     @DeleteMapping("zones/{id}")
     public boolean zoneDelete(@PathVariable Long id) {
         return areaService.deleteArea(id);
@@ -75,6 +89,27 @@ public class PiComRestController {
         return user;
     }
 
+    /**
+     *
+     * @param lastname
+     * @param firstname
+     * @param email
+     * @param password
+     * @param numtel
+     * @return
+     */
+    @PostMapping("addCustomer/{lastname}/{firstname}/{email}/{password}/{numtel}")
+    public Customer addCustomer(@PathVariable String lastname, @PathVariable String firstname,
+                                @PathVariable String email, @PathVariable String password, @PathVariable String numtel) {
+        Customer customer = new Customer();
+        customer.setLastName(lastname);
+        customer.setFirstName(firstname);
+        customer.setEmail(email);
+        customer.setPassword(password);
+        customer.setNumeroTel(numtel);
+        return usersService.recordCustomer(customer);
+    }
+
 
     /**
      * Ajouter une annonce
@@ -89,22 +124,9 @@ public class PiComRestController {
         advertService.recordAdvert(advert);
         return advert;
     }
-
-    //add user
-    @PostMapping("addCustomer/{lastname}/{firstname}/{email}/{password}/{numtel}")
-    public Customer addCustomer(@PathVariable String lastname, @PathVariable String firstname,
-                                @PathVariable String email, @PathVariable String password, @PathVariable String numtel) {
-        Customer customer = new Customer();
-        customer.setLastName(lastname);
-        customer.setFirstName(firstname);
-        customer.setEmail(email);
-        customer.setPassword(password);
-        customer.setNumeroTel(numtel);
-        return usersService.recordCustomer(customer);
-    }
-
+    
     /**
-     * Récupérer les annonces d'un user
+     * Récupérer les annonces d'un utilisateur
      *
      * @param id
      * @return
