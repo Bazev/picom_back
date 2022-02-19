@@ -2,7 +2,6 @@ package fr.businesscase.eb.picom.service;
 
 import fr.businesscase.eb.picom.business.SlotTime;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface SlotTimeService {

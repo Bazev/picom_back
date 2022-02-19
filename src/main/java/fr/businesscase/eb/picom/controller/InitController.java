@@ -10,16 +10,14 @@ import org.springframework.stereotype.Controller;
 
 import javax.annotation.PostConstruct;
 import java.text.SimpleDateFormat;
-import java.util.Random;
 
 @Controller
 public class InitController {
 
-    private static final Random random = new Random();
     private final UsersService usersService;
     private final AreaService areaService;
     private final ArretService arretService;
-    private final AdvertService advertService;
+
     private final SlotTimeService slotTimeService;
     SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 
@@ -27,7 +25,6 @@ public class InitController {
         this.usersService = usersService;
         this.areaService = areaService;
         this.arretService = arretService;
-        this.advertService = advertService;
         this.slotTimeService = slotTimeService;
     }
 

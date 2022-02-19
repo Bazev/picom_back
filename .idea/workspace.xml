@@ -5,32 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c39880ab-95c2-4445-9ed9-8510c2924e0c" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fr/businesscase/eb/picom/service/impl/AdvertServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/picom.6IRbBg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/700d5ac2-a0bb-421c-88e2-7172e8ab50dc/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Advert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/Area.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/business/SlotTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/SlotTimeSerciceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/SlotTimeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/UsersSerciceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/InitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/controller/InitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/AreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/AreaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/SlotTimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/businesscase/eb/picom/service/SlotTimeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/businesscase/eb/picom/service/impl/AdvertServiceImplTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Advert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Advert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/AdvertHtml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/AdvertImage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/business/Area.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/InitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/InitController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/PiComRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/controller/PiComRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/AdvertService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/AdvertService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/AdvertServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/AdvertServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/SlotTimeSerciceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/businesscase/eb/picom/service/impl/UsersSerciceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/picom-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-fr.businesscase.eb.picom.PicomApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-fr.businesscase.eb.picom.PicomApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/fr.businesscase.eb.picom.PicomApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/fr.businesscase.eb.picom.PicomApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fr/businesscase/eb/picom/service/impl/AdvertServiceImplTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +71,7 @@
         <entry key="JPA Inspector" value="true" />
         <entry key="JPA Palette" value="true" />
         <entry key="JPA Structure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
@@ -73,8 +79,19 @@
         <entry key="JPA Inspector" value="false" />
         <entry key="JPA Palette" value="false" />
         <entry key="JPA Structure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="20gjqEEBL7H0hYLjJiQ9GKKtPxp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -103,10 +120,10 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43793103" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -116,7 +133,13 @@
       <recent name="fr.businesscase.eb.picom.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.PicomApplication">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.58">
     <configuration name="AdvertServiceImplTest.recordAdvert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="picom" />
       <extension name="coverage">
@@ -142,10 +165,171 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="fr.businesscase.eb.picom.PicomApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 9.0.58" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.58" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="505bf36e-0efa-4d26-a967-38aa42dcf433" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53787" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="73deecfc-63c2-453c-8892-3c97b4c2e21e" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60014" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AdvertServiceImplTest.recordAdvert" />
+      <item itemvalue="Spring Boot.PicomApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.58" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PicomApplication" />
@@ -190,6 +374,8 @@
       <workItem from="1637867527865" duration="272000" />
       <workItem from="1637912413970" duration="5433000" />
       <workItem from="1637934845547" duration="5477000" />
+      <workItem from="1645284283866" duration="97000" />
+      <workItem from="1645284405338" duration="4306000" />
     </task>
     <servers />
   </component>

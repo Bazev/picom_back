@@ -2,7 +2,6 @@ package fr.businesscase.eb.picom.service;
 
 import fr.businesscase.eb.picom.business.Area;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface AreaService {
