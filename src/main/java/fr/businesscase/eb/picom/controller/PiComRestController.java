@@ -27,7 +27,7 @@ public class PiComRestController {
     }
 
     //add a administrator
-    @PostMapping("admin/{nom}/{prenom}{email}/{password}")
+    @PostMapping("admin/{nom}/{prenom}/{email}/{password}")
     public Administrator ajouterAdmin(@PathVariable String email, @PathVariable String password,
                                       @PathVariable String nom, @PathVariable String prenom) {
         Administrator administrator = new Administrator();
