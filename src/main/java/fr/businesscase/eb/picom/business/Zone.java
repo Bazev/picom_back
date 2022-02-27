@@ -8,7 +8,7 @@ import java.util.List;
 
 @Table(name = "area")
 @Entity
-public class Area {
+public class Zone {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,21 +24,21 @@ public class Area {
     @JsonIgnore
     @ManyToMany
     @Cascade({org.hibernate.annotations.CascadeType.SAVE_UPDATE, org.hibernate.annotations.CascadeType.MERGE, org.hibernate.annotations.CascadeType.PERSIST})
-    private List<Advert> adverts;
+    private List<Annonce> annonces;
 
-    public Area() {
+    public Zone() {
     }
 
-    public Area(String name) {
+    public Zone(String name) {
         this.name = name;
     }
 
-    public List<Advert> getAdverts() {
-        return adverts;
+    public List<Annonce> getAdverts() {
+        return annonces;
     }
 
-    public void setAdverts(List<Advert> adverts) {
-        this.adverts = adverts;
+    public void setAdverts(List<Annonce> annonces) {
+        this.annonces = annonces;
     }
 
     public List<Arret> getArrets() {

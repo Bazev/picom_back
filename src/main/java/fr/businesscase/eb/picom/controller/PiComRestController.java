@@ -12,30 +12,30 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 public class PiComRestController {
 
-    private final UsersService usersService;
-    private final AreaService areaService;
-    private final CustomerService customerService;
-    private final SlotTimeService slotTimeService;
-    private final AdvertService advertService;
+    private final UtilisateurService utilisateurService;
+    private final ZoneService zoneService;
+    private final ClientService clientService;
+    private final TrancheHoraireService trancheHoraireService;
+    private final AnnonceService annonceService;
 
-    public PiComRestController(UsersService usersService, AreaService areaService, CustomerService customerService, SlotTimeService slotTimeService, AdvertService advertService) {
-        this.usersService = usersService;
-        this.areaService = areaService;
-        this.customerService = customerService;
-        this.slotTimeService = slotTimeService;
-        this.advertService = advertService;
+    public PiComRestController(UtilisateurService utilisateurService, ZoneService zoneService, ClientService clientService, TrancheHoraireService trancheHoraireService, AnnonceService annonceService) {
+        this.utilisateurService = utilisateurService;
+        this.zoneService = zoneService;
+        this.clientService = clientService;
+        this.trancheHoraireService = trancheHoraireService;
+        this.annonceService = annonceService;
     }
 
     //add a administrator
     @PostMapping("admin/{nom}/{prenom}/{email}/{password}")
-    public Administrator ajouterAdmin(@PathVariable String email, @PathVariable String password,
-                                      @PathVariable String nom, @PathVariable String prenom) {
-        Administrator administrator = new Administrator();
-        administrator.setLastName(nom);
-        administrator.setFirstName(prenom);
-        administrator.setEmail(email);
-        administrator.setPassword(password);
-        return usersService.recordAdministrator(administrator);
+    public Administrateur ajouterAdmin(@PathVariable String email, @PathVariable String password,
+                                       @PathVariable String nom, @PathVariable String prenom) {
+        Administrateur administrateur = new Administrateur();
+        administrateur.setNom(nom);
+        administrateur.setPrenom(prenom);
+        administrateur.setEmail(email);
+        administrateur.setPassword(password);
+        return utilisateurService.enregistrerAdministrateur(administrateur);
     }
 
     /**
@@ -43,8 +43,8 @@ public class PiComRestController {
      * @return
      */
     @GetMapping("zones")
-    public List<Area> zonesGet() {
-        return areaService.getAreas();
+    public List<Zone> zonesGet() {
+        return zoneService.recupererZones();
     }
 
     /**
@@ -52,8 +52,8 @@ public class PiComRestController {
      * @return
      */
     @GetMapping("slots")
-    public List<SlotTime> slotsGet() {
-        return slotTimeService.getSlotTimes();
+    public List<TrancheHoraire> slotsGet() {
+        return trancheHoraireService.getSlotTimes();
     }
 
     /**
@@ -62,8 +62,8 @@ public class PiComRestController {
      * @return
      */
     @PostMapping("zones/{nom}")
-    public Area zonesPost(@PathVariable String nom) {
-        return areaService.addArea(nom);
+    public Zone zonesPost(@PathVariable String nom) {
+        return zoneService.ajouterZone(nom);
     }
 
     /**
@@ -73,7 +73,7 @@ public class PiComRestController {
      */
     @DeleteMapping("zones/{id}")
     public boolean zoneDelete(@PathVariable Long id) {
-        return areaService.deleteArea(id);
+        return zoneService.deleteArea(id);
     }
 
     /**
@@ -83,8 +83,8 @@ public class PiComRestController {
      */
 
     @PostMapping("login/{email}/{password}")
-    public User getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
-        User user = usersService.getUser(email, password);
+    public Utilisateur getPasswordByEmail(@PathVariable String email, @PathVariable String password) {
+        Utilisateur user = utilisateurService.recupererUtilisateur(email, password);
         System.out.println("connexion de" + email);
         return user;
     }
@@ -99,30 +99,30 @@ public class PiComRestController {
      * @return
      */
     @PostMapping("addCustomer/{lastname}/{firstname}/{email}/{password}/{numtel}")
-    public Customer addCustomer(@PathVariable String lastname, @PathVariable String firstname,
-                                @PathVariable String email, @PathVariable String password, @PathVariable String numtel) {
-        Customer customer = new Customer();
-        customer.setLastName(lastname);
-        customer.setFirstName(firstname);
-        customer.setEmail(email);
-        customer.setPassword(password);
-        customer.setNumeroTel(numtel);
-        return usersService.recordCustomer(customer);
+    public Client addCustomer(@PathVariable String lastname, @PathVariable String firstname,
+                              @PathVariable String email, @PathVariable String password, @PathVariable String numtel) {
+        Client client = new Client();
+        client.setNom(lastname);
+        client.setPrenom(firstname);
+        client.setEmail(email);
+        client.setPassword(password);
+        client.setNumeroDeTelephone(numtel);
+        return utilisateurService.enregistrerClient(client);
     }
 
 
     /**
      * Ajouter une annonce
      *
-     * @param advert
+     * @param annonce
      * @return
      */
     @PostMapping( "advert/{id}")
-    public Advert addAdvert(@RequestBody Advert advert, @PathVariable Long id) {
-        Customer customer = customerService.getCustomer(id);
-        advert.setCustomer(customer);
-        advertService.recordAdvert(advert);
-        return advert;
+    public Annonce addAdvert(@RequestBody Annonce annonce, @PathVariable Long id) {
+        Client client = clientService.getCustomer(id);
+        annonce.setClient(client);
+        annonceService.recordAdvert(annonce);
+        return annonce;
     }
     
     /**
@@ -132,9 +132,9 @@ public class PiComRestController {
      * @return
      */
     @GetMapping("customer/{id}/adverts")
-    public List<Advert> getAdvertsByCustomer(@PathVariable Long id) {
-        Customer customer = customerService.getCustomer(id);
-        return advertService.getAdvertsByCustomer(customer);
+    public List<Annonce> getAdvertsByCustomer(@PathVariable Long id) {
+        Client client = clientService.getCustomer(id);
+        return annonceService.getAdvertsByCustomer(client);
 
     }
 
@@ -145,8 +145,8 @@ public class PiComRestController {
      * @return
      */
     @GetMapping("advert/{id}")
-    public Advert getAdvertById(@PathVariable Long id) {
-        return advertService.getAdvert(id);
+    public Annonce getAdvertById(@PathVariable Long id) {
+        return annonceService.recupererAnnonce(id);
     }
 
     /**
@@ -156,9 +156,9 @@ public class PiComRestController {
      * @return
      */
     @PutMapping("advert/{id}/{contenu}")
-    Advert modifierAnnonce(@PathVariable Long id, @PathVariable String contenu) {
-        Advert advert = advertService.getAdvert(id);
-        return advertService.modifierContenuAnnonce(advert, contenu);
+    Annonce modifierAnnonce(@PathVariable Long id, @PathVariable String contenu) {
+        Annonce annonce = annonceService.recupererAnnonce(id);
+        return annonceService.modifierContenuAnnonce(annonce, contenu);
     }
 
 }

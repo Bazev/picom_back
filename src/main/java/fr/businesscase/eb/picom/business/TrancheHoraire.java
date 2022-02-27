@@ -9,7 +9,7 @@ import java.util.List;
 
 @Table(name = "slot_time")
 @Entity
-public class SlotTime implements Serializable {
+public class TrancheHoraire implements Serializable {
 
     @Id
     @JsonIgnore
@@ -22,13 +22,13 @@ public class SlotTime implements Serializable {
 
     @JsonIgnore
     @Cascade({org.hibernate.annotations.CascadeType.SAVE_UPDATE, org.hibernate.annotations.CascadeType.MERGE, org.hibernate.annotations.CascadeType.PERSIST})
-    @ManyToMany(mappedBy = "slotTimes")
-    private List<Advert> adverts;
+    @ManyToMany(mappedBy = "trancheHoraires")
+    private List<Annonce> annonces;
 
-    public SlotTime() {
+    public TrancheHoraire() {
     }
 
-    public SlotTime(int start) {
+    public TrancheHoraire(int start) {
         this.start = start;
     }
 
@@ -50,12 +50,12 @@ public class SlotTime implements Serializable {
         this.id = id;
     }
 
-    public List<Advert> getAdverts() {
-        return adverts;
+    public List<Annonce> getAdverts() {
+        return annonces;
     }
 
-    public void setAdverts(List<Advert> adverts) {
-        this.adverts = adverts;
+    public void setAdverts(List<Annonce> annonces) {
+        this.annonces = annonces;
     }
 
     @Override

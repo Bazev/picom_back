@@ -16,27 +16,27 @@ public class Arret implements Serializable {
 
     @ManyToOne
     @JsonIgnore
-    @JoinColumn(name = "area_id")
-    private Area area;
+    @JoinColumn(name = "zone_id")
+    private Zone zone;
 
     @NotBlank(message = "Champ obligatoire")
     @Column(name = "nom")
-    private String name;
+    private String nom;
 
     public Arret() {
     }
 
-    public Arret(Area area, String name) {
-        this.area = area;
-        this.name = name;
+    public Arret(Zone zone, String nom) {
+        this.zone = zone;
+        this.nom = nom;
     }
 
-    public String getName() {
-        return name;
+    public String getNom() {
+        return nom;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNom(String name) {
+        this.nom = name;
     }
 
     public Long getId() {
@@ -47,19 +47,19 @@ public class Arret implements Serializable {
         this.id = id;
     }
 
-    public Area getArea() {
-        return area;
+    public Zone getZone() {
+        return zone;
     }
 
-    public void setArea(Area area) {
-        this.area = area;
+    public void setZone(Zone zone) {
+        this.zone = zone;
     }
 
     @Override
     public String toString() {
         return getClass().getSimpleName() + "(" +
                 "id = " + id + ", " +
-                "area = " + area + ", " +
-                "name = " + name + ")";
+                "area = " + zone + ", " +
+                "name = " + nom + ")";
     }
 }

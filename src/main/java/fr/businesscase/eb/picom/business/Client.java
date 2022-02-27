@@ -10,26 +10,26 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-public class Customer extends User  implements Serializable {
+public class Client extends Utilisateur implements Serializable {
 
     @Length(max = 15)
     @Column(name = "numero_tel", unique = true)
-    private String numeroTel;
+    private String numeroDeTelephone;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "customer")
-    private List<Advert> adverts;
+    @OneToMany(mappedBy = "client")
+    private List<Annonce> annonces;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "client")
     private List<CarteBancaire> carteBancaires;
 
-    public Customer() {
+    public Client() {
     }
 
-    public Customer(String nom, String prenom, String email, String password, String numeroTel) {
+    public Client(String nom, String prenom, String email, String password, String numeroDeTelephone) {
         super(nom, prenom, email, password);
-        this.numeroTel = numeroTel;
+        this.numeroDeTelephone = numeroDeTelephone;
     }
 
     public List<CarteBancaire> getCarteBancaires() {
@@ -40,29 +40,29 @@ public class Customer extends User  implements Serializable {
         this.carteBancaires = carteBancaires;
     }
 
-    public List<Advert> getAdverts() {
-        return adverts;
+    public List<Annonce> getAnnonces() {
+        return annonces;
     }
 
-    public void setAdverts(List<Advert> adverts) {
-        this.adverts = adverts;
+    public void setAnnonces(List<Annonce> annonces) {
+        this.annonces = annonces;
     }
 
-    public String getNumeroTel() {
-        return numeroTel;
+    public String getNumeroDeTelephone() {
+        return numeroDeTelephone;
     }
 
-    public void setNumeroTel(String numeroTel) {
-        this.numeroTel = numeroTel;
+    public void setNumeroDeTelephone(String numeroTel) {
+        this.numeroDeTelephone = numeroTel;
     }
 
     @Override
     public String toString() {
         return getClass().getSimpleName() + "(" +
                 "id = " + getId() + ", " +
-                "numeroTel = " + getNumeroTel() + ", " +
-                "nom = " + getLastName() + ", " +
-                "prenom = " + getFirstName() + ", " +
+                "numeroTel = " + getNumeroDeTelephone() + ", " +
+                "nom = " + getNom() + ", " +
+                "prenom = " + getPrenom() + ", " +
                 "email = " + getEmail() + ", " +
                 "password = " + getPassword() + ")";
     }

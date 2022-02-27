@@ -1,7 +1,7 @@
 package fr.businesscase.eb.picom.service;
 
 import fr.businesscase.eb.picom.business.Arret;
-import fr.businesscase.eb.picom.business.Area;
+import fr.businesscase.eb.picom.business.Zone;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ public interface ArretService {
     Arret enregistrerArret(Arret arret);
 
     List<Arret> recupererArrets();
-    List<Arret> recupererArrets(Area area);
+    List<Arret> recupererArrets(Zone zone);
 
 
 }

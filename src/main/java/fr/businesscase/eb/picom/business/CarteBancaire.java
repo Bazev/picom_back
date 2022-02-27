@@ -12,7 +12,7 @@ public class CarteBancaire {
 
     @ManyToOne
     @JoinColumn(name = "client_id")
-    private Customer customer;
+    private Client client;
 
     @Column(name = "numero_carte")
     private String numeroCarte;
@@ -69,19 +69,19 @@ public class CarteBancaire {
         this.id = id;
     }
 
-    public Customer getClient() {
-        return customer;
+    public Client getClient() {
+        return client;
     }
 
-    public void setClient(Customer customer) {
-        this.customer = customer;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
     @Override
     public String toString() {
         return getClass().getSimpleName() + "(" +
                 "id = " + id + ", " +
-                "client = " + customer + ", " +
+                "client = " + client + ", " +
                 "numeroCarte = " + numeroCarte + ", " +
                 "anneeExpiration = " + anneeExpiration + ", " +
                 "moisExpiration = " + moisExpiration + ", " +

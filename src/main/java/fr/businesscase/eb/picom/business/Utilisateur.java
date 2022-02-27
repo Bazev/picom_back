@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 
 @Table(name = "users")
 @Entity
-public abstract class User {
+public abstract class Utilisateur {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,13 +18,13 @@ public abstract class User {
 
     @JsonIgnore
     @NotBlank(message = "Merci de préciser un nom")
-    @Column(name = "lastName")
-    private String lastName;
+    @Column(name = "nom")
+    private String nom;
 
     @JsonIgnore
     @NotBlank(message = "Merci de préciser un prenom")
-    @Column(name = "firstName")
-    private String firstName;
+    @Column(name = "prenom")
+    private String prenom;
 
     @JsonIgnore
     @NotBlank(message = "Merci de rentrer votre e-mail")
@@ -39,12 +39,12 @@ public abstract class User {
     private String password;
 
 
-    public User() {
+    public Utilisateur() {
     }
 
-    public User(String lastName, String firstName, String email, String password) {
-        this.lastName = lastName;
-        this.firstName = firstName;
+    public Utilisateur(String nom, String prenom, String email, String password) {
+        this.nom = nom;
+        this.prenom = prenom;
         this.email = email;
         this.password = password;
     }
@@ -65,20 +65,20 @@ public abstract class User {
         this.email = email;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getPrenom() {
+        return prenom;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getNom() {
+        return nom;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public Long getId() {
@@ -93,8 +93,8 @@ public abstract class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", lastName='" + lastName + '\'' +
-                ", firstName='" + firstName + '\'' +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';

@@ -12,7 +12,7 @@ import java.util.List;
 
 @Table(name = "advert")
 @Entity
-public class Advert  implements Serializable {
+public class Annonce implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,57 +20,55 @@ public class Advert  implements Serializable {
     private Long id;
 
     @Temporal(TemporalType.DATE)
-    @Column(name = "date_create")
+    @Column(name = "date_creation")
     @DateTimeFormat(pattern = "yyyy-mm-jj")
-    private Date dateCreate;
+    private Date dateCreation;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "date_start")
     @DateTimeFormat(pattern = "jj-mm-yyyy")
     @NotNull(message = "Date de début requis")
-    private Date dateStart;
+    private Date dateDebut;
 
     @Temporal(TemporalType.DATE)
     @Column(name = "date_end")
     @DateTimeFormat(pattern = "jj-mm-yyyy")
     @NotNull(message = "Date de fin requis")
-    private Date dateEnd;
+    private Date dateFin;
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "customer_id")
-    private Customer customer;
+    @JoinColumn(name = "client_id")
+    private Client client;
 
     @ManyToMany
     @Cascade({org.hibernate.annotations.CascadeType.SAVE_UPDATE, org.hibernate.annotations.CascadeType.MERGE, org.hibernate.annotations.CascadeType.PERSIST})
     @NotNull(message = "Créneaux requis")
-    private List<SlotTime> slotTimes;
+    private List<TrancheHoraire> trancheHoraires;
 
     @ManyToMany
     @Cascade({org.hibernate.annotations.CascadeType.SAVE_UPDATE, org.hibernate.annotations.CascadeType.MERGE, org.hibernate.annotations.CascadeType.PERSIST})
     @NotNull(message = "Zone requis")
-    private List<Area> areas;
+    private List<Zone> zones;
 
     @Column(name = "title")
     @NotNull(message = "Titre requis")
-    private String title;
+    private String titre;
 
     @Column(name = "contenu")
     private String contenu;
 
-    public Advert() {
+    public Annonce() {
     }
 
-    public Advert(Date dateStart, Date dateEnd, Customer customer, List<Area> areas, List<SlotTime> slotTimes, String title) {
-        this.dateStart = dateStart;
-        this.dateEnd = dateEnd;
-        this.customer = customer;
-        this.areas = areas;
-        this.slotTimes = slotTimes;
-        this.title = title;
+    public Annonce(Date dateDebut, Date dateFin, Client client, List<Zone> zones, List<TrancheHoraire> trancheHoraires, String titre) {
+        this.dateDebut = dateDebut;
+        this.dateFin = dateFin;
+        this.client = client;
+        this.zones = zones;
+        this.trancheHoraires = trancheHoraires;
+        this.titre = titre;
     }
-
-
 
     public Long getId() {
         return id;
@@ -80,60 +78,60 @@ public class Advert  implements Serializable {
         this.id = id;
     }
 
-    public Date getDateCreate() {
-        return dateCreate;
+    public Date getDateCreation() {
+        return dateCreation;
     }
 
-    public void setDateCreate(Date dateCreate) {
-        this.dateCreate = dateCreate;
+    public void setDateCreation(Date dateCreate) {
+        this.dateCreation = dateCreate;
     }
 
-    public Date getDateStart() {
-        return dateStart;
+    public Date getDateDebut() {
+        return dateDebut;
     }
 
-    public void setDateStart(Date dateStart) {
-        this.dateStart = dateStart;
+    public void setDateDebut(Date dateStart) {
+        this.dateDebut = dateStart;
     }
 
-    public Date getDateEnd() {
-        return dateEnd;
+    public Date getDateFin() {
+        return dateFin;
     }
 
-    public void setDateEnd(Date dateEnd) {
-        this.dateEnd = dateEnd;
+    public void setDateFin(Date dateEnd) {
+        this.dateFin = dateEnd;
     }
 
-    public Customer getCustomer() {
-        return customer;
+    public Client getClient() {
+        return client;
     }
 
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
+    public void setClient(Client client) {
+        this.client = client;
     }
 
-    public List<Area> getAreas() {
-        return areas;
+    public List<TrancheHoraire> getTrancheHoraires() {
+        return trancheHoraires;
     }
 
-    public void setAreas(List<Area> areas) {
-        this.areas = areas;
+    public void setTrancheHoraires(List<TrancheHoraire> trancheHoraires) {
+        this.trancheHoraires = trancheHoraires;
     }
 
-    public List<SlotTime> getSlotTimes() {
-        return slotTimes;
+    public List<Zone> getZones() {
+        return zones;
     }
 
-    public void setSlotTimes(List<SlotTime> slotTimes) {
-        this.slotTimes = slotTimes;
+    public void setZones(List<Zone> zones) {
+        this.zones = zones;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitre() {
+        return titre;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitre(String titre) {
+        this.titre = titre;
     }
 
     public String getContenu() {
@@ -148,11 +146,11 @@ public class Advert  implements Serializable {
     public String toString() {
         return "Advert{" +
                 "id=" + id +
-                ", dateCreate=" + dateCreate +
-                ", dateStart=" + dateStart +
-                ", dateEnd=" + dateEnd +
-                ", customer=" + customer +
-                ", title='" + title + '\'' +
+                ", dateCreation=" + dateCreation +
+                ", dateDebut=" + dateDebut +
+                ", dateFin=" + dateFin +
+                ", client=" + client +
+                ", titre='" + titre + '\'' +
                 ", contenu='" + contenu + '\'' +
                 '}';
     }
